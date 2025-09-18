@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>স্মার্ট ছাদবাগান</title>
+  <meta name="color-scheme" content="light dark">
+  <style>
+    /* ---------- Theme ---------- */
+    :root{
+      --bg: #0b1220;
+      --bg2: #0f172a;
+      --card: rgba(255,255,255,.08);
+      --stroke: rgba(231, 218, 218, 0.15);
+      --ink: #ecf0f5;
+      --muted: #c1e677;
+      --pri: #22c55e;
+      --pri-2: #16a34a;
+      --grad: radial-gradient(1200px 600px at 20% -10%, #10b98133, transparent 60%),
+              radial-gradient(1000px 800px at 120% 10%, #60a5fa33, transparent 60%),
+              linear-gradient(180deg, #75c84b 0%, #207939 60%, #074819 100%);
+      --shadow: 0 10px 30px rgba(0,0,0,.35), 0 0 0 1px var(--stroke) inset;
+      --chip: rgba(34,197,94,.15);
+      --chip-ink: #a7f3d0;
+      --accent: #38bdf8;
+      --warn: #f59e0b;
+      --ok: #6fe299;
+    }
+    .light{
+      --bg: #8be5bb;
+      --bg2: #043882;
+      --card: rgba(199, 208, 145, 0.9);
+      --stroke: rgba(2,6,23,.08);
+      --ink: #0f172a;
+      --muted: #e5eefb;
+      --pri: #83dea4;
+      --pri-2: #87c09c;
+      --grad: conic-gradient(from 220deg at 20% -10%, #86efac33, #93c5fd33, transparent 60%),
+              linear-gradient(180deg, #9097af 0%, #7e8791 60%, #e2e8f0 100%);
+      --shadow: 0 10px 30px rgba(2,6,23,.08), 0 0 0 1px var(--stroke) inset;
+      --chip: #90e5ae;
+      --chip-ink: #064e3b;
+      --accent: #0284c7;
+      --warn: #b45309;
+      --ok: #15803d;
+    }
+
+    /* ---------- Reset ---------- */
+    *{ box-sizing:border-box }
+    body{ margin:0; font-family: ui-sans-serif, system-ui, Segoe UI, Roboto; color:var(--ink); background:var(--grad) no-repeat fixed; min-height:100vh }
+    a{ color:var(--accent); text-decoration:none }
+    .wrap{ max-width:1200px; margin:0 auto; padding:24px }
+
+    /* ---------- Utilities ---------- */
+    .grid{ display:grid; gap:16px }
+    @media (min-width: 992px){ .grid-2{ grid-template-columns: 1.1fr .9fr } }
+    .card{ background:var(--card); border-radius:18px; box-shadow:var(--shadow); backdrop-filter:blur(10px); padding:18px }
+    .row{ display:flex; gap:10px; flex-wrap:wrap }
+    .btn{ background:var(--pri); color:#adccac; border:0; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:600; transition:transform .08s ease, filter .2s }
+    .btn:active{ transform: translateY(1px) }
+    .btn.outline{ background:transparent; color:var(--ink); border:1px solid var(--stroke) }
+    .btn.alt{ background:var(--accent) }
+    .btn.gray{ background:#475569 }
+    .field{ display:grid; gap:6px; flex:1; min-width:140px }
+    label{ font-size:12px; color:var(--muted) }
+    input,select{ width:100%; padding:12px 12px; border:1px solid var(--stroke); background:transparent; color:var(--ink); border-radius:12px; outline:none }
+    input::placeholder{ color:var(--muted) }
+    .hero{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px }
+    .title{ font-size:32px; font-weight:900; letter-spacing:.2px; line-height:1.1 }
+    .title > .grad{ background: linear-gradient(90deg,#22c55e,#38bdf8); -webkit-background-clip:text; background-clip:text; color:transparent }
+    .sub{ color:var(--muted); margin-top:6px }
+    .chips{ display:flex; gap:8px; flex-wrap:wrap; margin-top:8px }
+    .chip{ background:var(--chip); color:var(--chip-ink); padding:6px 10px; border-radius:999px; font-size:12px; border:1px solid var(--stroke) }
+
+    /* ---------- Table ---------- */
+    table{ width:100%; border-collapse:collapse }
+    th,td{ padding:10px 10px; border-bottom:1px solid var(--stroke); text-align:left }
+    th{ font-size:12px; letter-spacing:.3px; text-transform:uppercase; color:var(--muted) }
+    tr:hover td{ background:rgba(148,163,184,.08) }
+
+    /* ---------- Layout Grid ---------- */
+    .layout{ display:grid; gap:10px }
+    .cell{ min-height:72px; border:1px dashed var(--stroke); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--muted); position:relative; overflow:hidden }
+    .cell::after{ content:""; position:absolute; inset:0; background:linear-gradient(120deg, transparent, rgba(255,255,255,.06), transparent); transform:translateX(-100%); animation:shine 2s ease-in-out infinite }
+    @keyframes shine{ 50%{ transform:translateX(100%) } }
+
+    /* ---------- Header ---------- */
+    .nav{ display:flex; align-items:center; justify-content:space-between; margin-bottom:16px }
+    .brand{ display:flex; align-items:center; gap:10px; font-weight:800 }
+    .badge{ font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid var(--stroke); color:var(--muted) }
+
+    /* ---------- Status ---------- */
+    .status{ margin-top:8px; font-size:12px; color:var(--muted) }
+    .toast{ position:fixed; right:16px; bottom:16px; background:var(--card); border:1px solid var(--stroke); padding:10px 14px; border-radius:12px; box-shadow:var(--shadow) }
+
+    /* ---------- Switch ---------- */
+    .switch{ display:flex; align-items:center; gap:8px; cursor:pointer }
+    .toggle{ width:42px; height:24px; border-radius:999px; background:#334155; border:1px solid var(--stroke); position:relative }
+    .knob{ width:18px; height:18px; border-radius:50%; background:#fff; position:absolute; top:2px; left:2px; transition:left .2s ease }
+    .light .toggle{ background:#e2e8f0 }
+    .light .knob{ background:#0f172a }
+    .on .knob{ left:22px }
+
+    /* ---------- Skeleton ---------- */
+    .skeleton{ border-radius:10px; background:linear-gradient(90deg, rgba(148,163,184,.15) 25%, rgba(148,163,184,.05) 37%, rgba(148,163,184,.15) 63%); background-size:400% 100%; animation: shimmer 1.2s infinite }
+    @keyframes shimmer{ 0%{background-position:100% 0} 100%{background-position:0 0} }
+  </style>
+</head>
+<body class="light">
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 12c0-4.418 3.582-8 8-8a8 8 0 0 1 8 8c0 2.971-1.62 5.567-4.02 6.949-.44.252-.98.078-1.23-.361l-.61-1.06a1 1 0 0 1 .35-1.36A5.99 5.99 0 0 0 18 12a6 6 0 1 0-12 0 5.99 5.99 0 0 0 3.51 5.361 1 1 0 0 1 .35 1.36l-.61 1.06c-.25.439-.79.613-1.23.361C5.62 17.567 4 14.971 4 12Z" fill="currentColor"/>
+          <path d="M9 11c0-1.657 1.343-3 3-3v0c1.657 0 3 1.343 3 3v6a3 3 0 0 1-6 0v-6Z" fill="currentColor" opacity=".6"/>
+        </svg>
+        <div>RoofBot</div>
+      </div>
+      <div class="switch" id="themeSwitch">
+        <div class="toggle" id="toggle"><div class="knob"></div></div>
+        <span style="color:var(--muted); font-size:12px">Dark</span>
+      </div>
+    </div>
+
+    <div class="hero card">
+      <div>
+          <h2>🌿ছাদকৃষি</h2>  
+        
+        <div class="title"> </div>
+        <div class="sub"></div>
+        <div class="chips">
+          
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn" onclick="genPlan()">Generate Plan</button>
+       
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="margin:0 0 12px">ছাদের তথ্য</h3>
+        <div class="row">
+          <div class="field">
+            <label>বিভাগ</label>
+            <select id="division">
+              <option>Dhaka</option><option>Chattogram</option><option>Rajshahi</option>
+              <option>Khulna</option><option>Barishal</option><option>Sylhet</option>
+              <option>Rangpur</option><option>Mymensingh</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>ছাদের আয়তন (m²)</label>
+            <input id="area" type="number" value="8" min="1" step="0.5" />
+          </div>
+          <div class="field">
+            <label>মাটির ধরণ</label>
+            <select id="soil">
+              <option>loam</option><option>sandy</option><option>clay</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>রোদ (ঘণ্টা/দিন)</label>
+            <input id="sun" type="number" value="6" min="0" max="12" step="0.5" />
+          </div>
+          <div class="field">
+            <label>সিজন (ঐচ্ছিক)</label>
+            <select id="season">
+              <option value="">auto</option><option>winter</option><option>warm</option><option>cool</option><option>all</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>গাছের সংখ্যা</label>
+            <input id="count" type="number" value="8" min="3" max="30" />
+          </div>
+        </div>
+        <div class="status" id="status">Ready.</div>
+      </div>
+        <div class="card">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px">
+          <h3 style="margin:0">🌿 ছাদকৃষি কী?<hr><br>
+          ছাদকৃষি হল শহুরে পরিবেশে ছাদের খালি জায়গাকে ব্যবহার করে শাকসবজি, ফলমূল ও ফুল চাষের একটি আধুনিক পদ্ধতি। এটি শুধু খাদ্য নিরাপত্তায় সহায়তা করে না, বরং পরিবারকে নিরাপদ ও বিষমুক্ত খাবার সরবরাহ করে।
+<br>
+✨ ছাদকৃষির উপকারিতা<br>
+
+<hr>
+খাদ্য নিরাপত্তা: পরিবারে তাজা ও পুষ্টিকর সবজি সরবরাহ করে।<br>
+
+পরিবেশ সুরক্ষা: ছাদে সবুজায়ন শহরের তাপমাত্রা নিয়ন্ত্রণে সাহায্য করে।<br>
+
+স্বাস্থ্যগত দিক: নিজস্ব বাগান মানসিক প্রশান্তি দেয় এবং শারীরিক সুস্থতাও বাড়ায়।<br>
+
+অর্থনৈতিক সুবিধা: বাজার থেকে সবজি কেনার খরচ কমে যায়।
+<br>
+⚡ স্মার্ট ছাদকৃষি
+<hr>
+
+RoofBot-এর মতো AI-চালিত টুল ব্যবহার করে এখন ছাদকৃষি আরও সহজ।
+
+ছাদের অবস্থান, আকার, মাটির ধরন, মৌসুম ও সূর্যের আলো অনুযায়ী উপযুক্ত গাছের পরামর্শ পাওয়া যায়।
+
+প্রতিটি গাছের জন্য স্বয়ংক্রিয় কেয়ার প্ল্যান তৈরি হয়।
+
+ব্যবহারকারী নিজস্ব প্রয়োজন অনুযায়ী বাগান সাজাতে পারেন।
+        </h3>
+          <span class="badge" id="apiBase"></span>
+        </div>
+        <div id="plantSkeleton" class="skeleton" style="height:140px; display:none"></div>
+        <table>
+          <thead><tr><th></th><th></th><th></th><th></th></tr></thead>
+          <tbody id="plantRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px">
+        <h3 style="margin:0">আপনার বাগানের জন্য বাছাইকৃত গাছ....</h3>
+        <small style="color:var(--muted)"></small>
+      </div>
+      <div id="layout" class="layout"></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3 style="margin:0 0 10px">কেয়ার প্ল্যান</h3>
+      <div class="row" style="margin-bottom:10px">
+        <input id="carePlant" placeholder="টেবিল থেকে যে নামটি পছন্দ হয়েছে লিখুন…" style="flex:1" />
+        <button class="btn gray" onclick="getCare()">Get Care Plan</button>
+      </div>
+      <div id="careOut" class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" style="display:none"></div>
+
+<script>
+const API = ""; // same origin
+const $ = (id) => document.getElementById(id);
+const toast = (m, t=1800) => { const el = $("toast"); el.textContent = m; el.style.display="block"; setTimeout(()=> el.style.display="none", t); };
+
+// Theme
+(function initTheme(){
+  const saved = localStorage.getItem("roofbot_theme");
+  if(saved === "dark"){ document.body.classList.remove("light"); $("toggle").classList.add("on"); }
+})();
+document.getElementById("themeSwitch").addEventListener("click", () => {
+  const isLight = document.body.classList.contains("light");
+  if(isLight){ document.body.classList.remove("light"); $("toggle").classList.add("on"); localStorage.setItem("roofbot_theme","dark"); }
+  else{ document.body.classList.add("light"); $("toggle").classList.remove("on"); localStorage.setItem("roofbot_theme","light"); }
+});
+
+function setStatus(msg){ $("status").textContent = msg; }
+
+async function health(){
+  try{
+    const res = await fetch(`${API}/api/health`);
+    const data = await res.json();
+    toast(data.ok ? "✅ API OK" : "⚠️ API issue");
+  }catch(e){ toast("⚠️ API not reachable"); }
+}
+
+async function loadPlants(){
+  setStatus("Loading plants...");
+  $("plantSkeleton").style.display = "block";
+  const res = await fetch(`${API}/api/plants`);
+  if(!res.ok){ setStatus("Failed: /api/plants not found"); $("plantSkeleton").style.display="none"; return; }
+  const data = await res.json();
+  const rows = data.plants.map(p => `<tr>
+    <td><b>${p.name||""}</b></td><td>${p.sunlight||""}</td>
+    <td>${p.water_need||""}</td><td>${p.soil_type||""}</td></tr>`).join("");
+  $("plantRows").innerHTML = rows;
+  $("plantSkeleton").style.display = "none";
+  setStatus(`Loaded ${data.count} plants.`);
+  toast("🌿 Plants loaded");
+}
+
+async function genPlan(){
+  $("layout").innerHTML = "";
+  setStatus("Generating plan...");
+  const body = {
+    division: $("division").value,
+    roof_area_m2: parseFloat($("area").value),
+    soil_type: $("soil").value,
+    sun_hours: parseFloat($("sun").value),
+    season: $("season").value || null,
+    count: parseInt($("count").value)
+  };
+  const res = await fetch(`${API}/api/garden-plan`, {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body: JSON.stringify(body)
+  });
+  if(!res.ok){ setStatus("Failed: /api/garden-plan not found"); return; }
+  const data = await res.json();
+  const recs = data.recommendations || [];
+  const rows = recs.map(p => `<tr>
+    <td><b>${p.name||""}</b></td><td>${p.sunlight||""}</td>
+    <td>${p.water_need||""}</td><td>${p.soil_type||""}</td></tr>`).join("");
+  $("plantRows").innerHTML = rows;
+
+  // grid
+  const g = data.layout;
+  $("layout").style.gridTemplateColumns = `repeat(${g.cols}, 1fr)`;
+  $("layout").innerHTML = g.cells.map(cell => `<div class="cell">${cell.plant || "—"}</div>`).join("");
+  setStatus("Plan ready.");
+  toast("✅ Plan generated");
+}
+
+async function getCare(){
+  const name = $("carePlant").value.trim();
+  if(!name){ toast("একটি গাছের নাম লিখুন"); return; }
+  const res = await fetch(`${API}/api/care-plan`, {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({ plant_name: name })
+  });
+  if(!res.ok){ toast("Care API failed"); return; }
+  const data = await res.json();
+  const p = data.plan;
+
+  const cards = [
+    ["🌞 আলো", p.daily],
+    ["💧 পানি", p.watering],
+    ["🪴 মাটি", p.soil],
+  ].map(([ttl,txt]) => `<div class="card"><div style="font-weight:700;margin-bottom:6px">${ttl}</div><div style="color:var(--muted)">${txt}</div></div>`).join("");
+
+  const months = `<div class="card" style="grid-column:1/-1">
+    <div style="font-weight:700;margin-bottom:6px">📅 মাসিক শিডিউল</div>
+    <ul style="margin:0;padding-left:18px;color:var(--muted)">
+      ${p.monthly_schedule.map(m => `<li><b>${m.month}:</b> ${m.task}</li>`).join("")}
+    </ul>
+    <div style="margin-top:8px;color:var(--muted);font-size:12px">Generated: ${p.generated_on}</div>
+  </div>`;
+
+  $("careOut").innerHTML = `<div class="card" style="grid-column:1/-1">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="font-weight:800">🌿 ${p.plant}</div>
+        <small class="badge">Division: ${p.division||"—"}</small>
+      </div>
+    </div>${cards}${months}`;
+  toast("🧾 Care plan ready");
+}
+</script>
+</body>
+</html>

@@ -6,7 +6,6 @@ HERE = os.path.dirname(__file__)
 PLANTS_CSV = os.path.join(HERE, "plants_300.csv")  # expected real dataset
 DIVISIONS_CSV = os.path.join(HERE, "divisions.csv")
 
-# if real plants CSV missing, create a tiny demo so the app runs
 def _ensure_demo_plants():
     if os.path.exists(PLANTS_CSV):
         return
@@ -24,16 +23,16 @@ def load_data():
     _ensure_demo_plants()
     plants = pd.read_csv(PLANTS_CSV)
     divisions = pd.read_csv(DIVISIONS_CSV)
-    # Normalize categories
+    
     for col in ["sunlight", "water_need", "soil_type", "season"]:
         if col in plants.columns:
             plants[col] = plants[col].astype(str).str.strip().str.lower()
-    # Simple derived features
+    
     if "height_cm" not in plants.columns: plants["height_cm"] = 50
     if "spread_cm" not in plants.columns: plants["spread_cm"] = 40
     return plants, divisions
 
-# Map numeric sunlight hours to category
+
 def sunlight_category(hours: float):
     if hours is None: return "partial"
     try:
