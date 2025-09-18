@@ -1,0 +1,361 @@
+plant_name,category,difficulty_level,growth_days,sunlight_min,sunlight_max,temp_min,temp_max,humidity_min,humidity_max,area_min,soils,seasons,locations,care_instructions
+Tomato,Vegetable,Easy,70,6,10,20,35,50,80,10,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Tomato Plus,Vegetable,Easy,87,6,9,18,35,50,85,12,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Tomato Plus,Vegetable,Easy,73,5,11,20,35,55,80,10,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Tomato Plus,Vegetable,Easy,76,6,10,21,35,55,80,12,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Tomato Local,Vegetable,Easy,73,6,10,18,36,50,85,8,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Tomato Giant,Vegetable,Easy,94,5,10,21,35,55,80,10,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Tomato Compact,Vegetable,Easy,80,6,11,20,37,50,80,8,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Chili,Vegetable,Easy,72,6,10,22,35,45,75,8,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Keep soil moist; avoid waterlogging.
+Chili F1,Vegetable,Easy,76,7,11,22,35,50,75,6,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Keep soil moist; avoid waterlogging.
+Chili Mini,Vegetable,Easy,93,5,10,22,35,50,75,6,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Keep soil moist; avoid waterlogging.
+Chili Early,Vegetable,Easy,91,6,11,22,35,50,80,6,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Keep soil moist; avoid waterlogging.
+Eggplant,Vegetable,Medium,97,6,10,22,35,50,80,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Water 2–3x/week; light fertilizer during fruiting.
+Eggplant Compact,Vegetable,Medium,111,7,9,20,35,50,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Water 2–3x/week; light fertilizer during fruiting.
+Eggplant Patio,Vegetable,Medium,83,6,9,23,36,55,80,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Water 2–3x/week; light fertilizer during fruiting.
+Eggplant Heirloom,Vegetable,Medium,99,6,11,20,37,55,80,14,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Water 2–3x/week; light fertilizer during fruiting.
+Eggplant Hybrid,Vegetable,Medium,84,6,10,22,36,55,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Water 2–3x/week; light fertilizer during fruiting.
+Cucumber,Vegetable,Medium,65,6,10,20,34,55,85,15,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; regular watering.
+Cucumber Local,Vegetable,Medium,65,5,10,21,35,60,85,15,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; regular watering.
+Cucumber Late,Vegetable,Medium,60,6,9,21,36,60,85,17,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; regular watering.
+Cucumber Late,Vegetable,Medium,71,6,10,18,35,60,90,13,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; regular watering.
+Cucumber Mini,Vegetable,Medium,49,7,11,18,35,60,90,15,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; regular watering.
+Cucumber Patio,Vegetable,Medium,68,7,11,21,36,60,85,15,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; regular watering.
+Okra,Vegetable,Easy,66,6,10,22,35,50,80,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; harvest young pods.
+Okra Early,Vegetable,Easy,65,5,11,22,37,55,80,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; harvest young pods.
+Okra Patio,Vegetable,Easy,81,6,11,22,37,50,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; harvest young pods.
+Okra Plus,Vegetable,Easy,53,5,11,23,35,50,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; harvest young pods.
+Okra Patio,Vegetable,Easy,64,7,9,22,37,55,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; harvest young pods.
+Okra Mini,Vegetable,Easy,59,5,9,22,35,50,80,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; harvest young pods.
+Bitter Gourd,Vegetable,Medium,86,6,10,22,35,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; prune side shoots; steady water.
+Bitter Gourd Giant,Vegetable,Medium,92,6,9,20,36,65,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; prune side shoots; steady water.
+Bitter Gourd Prime,Vegetable,Medium,98,6,9,22,37,65,90,22,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; prune side shoots; steady water.
+Bitter Gourd Patio,Vegetable,Medium,94,6,9,22,36,65,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; prune side shoots; steady water.
+Bitter Gourd Gold,Vegetable,Medium,98,5,11,20,36,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; prune side shoots; steady water.
+Bitter Gourd Gold,Vegetable,Medium,85,6,11,23,35,65,85,22,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; prune side shoots; steady water.
+Ridge Gourd,Vegetable,Medium,97,6,10,22,35,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; feed monthly.
+Ridge Gourd Select,Vegetable,Medium,84,6,9,23,35,65,85,18,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; feed monthly.
+Ridge Gourd Nano,Vegetable,Medium,105,6,11,22,35,65,85,22,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; feed monthly.
+Ridge Gourd Select,Vegetable,Medium,79,6,9,22,35,65,90,22,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; feed monthly.
+Ridge Gourd Giant,Vegetable,Medium,94,6,11,20,37,65,85,22,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; feed monthly.
+Ridge Gourd Heirloom,Vegetable,Medium,84,6,9,23,35,60,90,18,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; feed monthly.
+Snake Gourd,Vegetable,Medium,85,6,10,22,35,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Snake Gourd Late,Vegetable,Medium,109,6,10,20,36,65,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Snake Gourd Patio,Vegetable,Medium,94,6,10,23,37,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Snake Gourd Heirloom,Vegetable,Medium,103,7,11,23,35,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Snake Gourd Giant,Vegetable,Medium,84,6,11,20,37,65,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Snake Gourd Patio,Vegetable,Medium,98,5,10,23,36,65,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Pumpkin,Vegetable,Medium,113,6,10,20,34,55,85,25,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Space well; mulch to retain moisture.
+Pumpkin Local,Vegetable,Medium,110,6,9,21,36,60,90,27,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Space well; mulch to retain moisture.
+Pumpkin Nano,Vegetable,Medium,118,7,10,21,34,55,85,25,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Space well; mulch to retain moisture.
+Pumpkin Plus,Vegetable,Medium,126,6,9,21,35,55,85,23,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Space well; mulch to retain moisture.
+Pumpkin Prolific,Vegetable,Medium,121,5,10,18,36,55,85,23,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Space well; mulch to retain moisture.
+Pumpkin Patio,Vegetable,Medium,113,6,9,20,34,60,85,23,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Space well; mulch to retain moisture.
+Pumpkin Hybrid,Vegetable,Medium,131,7,10,18,34,55,90,25,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Space well; mulch to retain moisture.
+Bottle Gourd,Vegetable,Medium,102,6,10,22,35,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; strong sun & water.
+Bottle Gourd Gold,Vegetable,Medium,113,5,10,23,35,60,90,18,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; strong sun & water.
+Bottle Gourd Heirloom,Vegetable,Medium,105,6,9,20,36,60,85,22,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; strong sun & water.
+Bottle Gourd Prolific,Vegetable,Medium,83,5,9,20,37,60,90,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; strong sun & water.
+Bottle Gourd Local,Vegetable,Medium,92,6,10,23,36,65,85,18,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; strong sun & water.
+Yardlong Bean,Vegetable,Easy,85,6,10,22,35,55,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing supports; pick frequently.
+Yardlong Bean Hybrid,Vegetable,Easy,68,5,10,20,35,60,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing supports; pick frequently.
+Yardlong Bean Prolific,Vegetable,Easy,53,6,9,23,36,55,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing supports; pick frequently.
+Yardlong Bean Plus,Vegetable,Easy,81,6,11,22,35,60,85,8,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing supports; pick frequently.
+French Bean,Vegetable,Easy,60,5,9,18,30,50,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Keep moist; avoid root rot.
+French Bean Late,Vegetable,Easy,55,4,9,16,31,55,85,6,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Keep moist; avoid root rot.
+French Bean Compact,Vegetable,Easy,51,4,8,16,30,50,85,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Keep moist; avoid root rot.
+French Bean Prolific,Vegetable,Easy,52,4,9,16,32,55,80,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Keep moist; avoid root rot.
+French Bean Giant,Vegetable,Easy,58,6,10,18,32,55,85,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Keep moist; avoid root rot.
+French Bean Giant,Vegetable,Easy,52,5,10,16,30,50,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Keep moist; avoid root rot.
+Broad Bean,Vegetable,Medium,73,5,8,15,28,45,75,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; wind protection.
+Broad Bean Heirloom,Vegetable,Medium,90,5,9,16,28,45,80,12,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; wind protection.
+Broad Bean Prime,Vegetable,Medium,92,4,9,16,29,45,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; wind protection.
+Broad Bean F1,Vegetable,Medium,79,6,9,15,29,50,75,12,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; wind protection.
+Broad Bean Heirloom,Vegetable,Medium,73,6,7,13,30,50,80,12,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; wind protection.
+Broad Bean Gold,Vegetable,Medium,85,4,9,13,28,45,75,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; wind protection.
+Pea,Vegetable,Easy,60,4,8,15,26,50,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; avoid heat stress.
+Pea Select,Vegetable,Easy,66,3,7,13,27,50,80,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; avoid heat stress.
+Pea Heirloom,Vegetable,Easy,50,5,8,13,26,55,80,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; avoid heat stress.
+Pea Select,Vegetable,Easy,55,4,7,15,27,50,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; avoid heat stress.
+Pea Mini,Vegetable,Easy,73,4,8,16,26,50,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; avoid heat stress.
+Radish,Vegetable,Easy,43,3,6,15,28,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Loose soil; thin seedlings early.
+Radish Plus,Vegetable,Easy,38,3,7,15,28,50,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Loose soil; thin seedlings early.
+Radish Prolific,Vegetable,Easy,37,3,6,15,28,45,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Loose soil; thin seedlings early.
+Radish Compact,Vegetable,Easy,47,3,7,15,30,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Loose soil; thin seedlings early.
+Radish Select,Vegetable,Easy,25,2,6,16,30,50,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Loose soil; thin seedlings early.
+Radish Select,Vegetable,Easy,25,4,6,13,28,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Loose soil; thin seedlings early.
+Radish Late,Vegetable,Easy,28,3,5,13,30,50,80,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Loose soil; thin seedlings early.
+Carrot,Vegetable,Medium,81,3,6,15,26,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Deep loose soil; steady moisture.
+Carrot Local,Vegetable,Medium,106,2,6,13,26,50,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Deep loose soil; steady moisture.
+Carrot Hybrid,Vegetable,Medium,94,3,6,16,28,50,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Deep loose soil; steady moisture.
+Carrot Compact,Vegetable,Medium,63,3,7,16,28,45,75,8,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Deep loose soil; steady moisture.
+Carrot Select,Vegetable,Medium,89,3,7,15,28,45,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Deep loose soil; steady moisture.
+Beetroot,Vegetable,Easy,71,3,6,15,28,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Mulch; thin to proper spacing.
+Beetroot Giant,Vegetable,Easy,47,3,6,13,28,50,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Mulch; thin to proper spacing.
+Beetroot Patio,Vegetable,Easy,78,3,7,16,28,50,75,8,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Mulch; thin to proper spacing.
+Beetroot Nano,Vegetable,Easy,76,3,7,13,28,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Mulch; thin to proper spacing.
+Turnip,Vegetable,Easy,57,3,6,15,26,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Turnip Select,Vegetable,Easy,59,4,6,16,28,50,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Turnip Early,Vegetable,Easy,56,3,5,15,28,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Turnip Plus,Vegetable,Easy,54,3,7,13,28,50,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Turnip Compact,Vegetable,Easy,41,3,6,16,28,45,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Turnip Late,Vegetable,Easy,53,3,6,15,27,50,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Turnip F1,Vegetable,Easy,76,3,6,16,26,50,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Potato,Vegetable,Medium,80,5,8,15,26,50,80,15,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Hill soil as plants grow.
+Potato Compact,Vegetable,Medium,97,4,8,16,26,55,80,13,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Hill soil as plants grow.
+Potato F1,Vegetable,Medium,98,4,8,13,28,55,85,17,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Hill soil as plants grow.
+Potato F1,Vegetable,Medium,98,4,9,13,26,55,80,13,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Hill soil as plants grow.
+Sweet Potato,Vegetable,Easy,109,6,10,22,35,55,85,15,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warm soil; harvest before frost.
+Sweet Potato Mini,Vegetable,Easy,105,5,11,20,36,55,85,17,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warm soil; harvest before frost.
+Sweet Potato Late,Vegetable,Easy,102,7,10,22,35,60,90,17,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warm soil; harvest before frost.
+Sweet Potato Compact,Vegetable,Easy,97,6,11,22,37,55,90,17,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warm soil; harvest before frost.
+Sweet Potato Prolific,Vegetable,Easy,102,6,10,20,36,60,90,17,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warm soil; harvest before frost.
+Sweet Potato Mini,Vegetable,Easy,110,5,11,20,35,60,85,13,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warm soil; harvest before frost.
+Sweet Potato F1,Vegetable,Easy,94,6,10,22,36,60,90,15,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warm soil; harvest before frost.
+Onion (Green),Vegetable,Easy,60,4,8,15,28,45,75,6,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Shallow roots; frequent light water.
+Onion (Green) Prolific,Vegetable,Easy,78,4,7,13,30,50,80,6,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Shallow roots; frequent light water.
+Onion (Green) Gold,Vegetable,Easy,83,4,9,16,28,50,75,8,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Shallow roots; frequent light water.
+Onion (Green) Hybrid,Vegetable,Easy,64,5,9,16,30,45,80,4,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Shallow roots; frequent light water.
+Onion (Green) Heirloom,Vegetable,Easy,79,4,8,16,29,50,75,8,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Shallow roots; frequent light water.
+Garlic,Vegetable,Medium,121,4,7,12,24,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Plant cloves; keep weed-free.
+Garlic Local,Vegetable,Medium,113,4,7,10,24,50,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Plant cloves; keep weed-free.
+Garlic Local,Vegetable,Medium,102,3,8,10,24,50,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Plant cloves; keep weed-free.
+Garlic Prolific,Vegetable,Medium,108,4,8,10,24,50,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Plant cloves; keep weed-free.
+Ginger,Vegetable,Medium,115,3,6,20,32,60,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Indirect sun; keep soil moist.
+Ginger Patio,Vegetable,Medium,133,3,6,21,33,60,90,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Indirect sun; keep soil moist.
+Ginger Prime,Vegetable,Medium,122,4,7,21,33,65,90,14,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Indirect sun; keep soil moist.
+Ginger Prime,Vegetable,Medium,116,4,5,21,33,60,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Indirect sun; keep soil moist.
+Ginger Gold,Vegetable,Medium,113,4,6,20,32,60,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Indirect sun; keep soil moist.
+Ginger Select,Vegetable,Medium,110,2,5,18,34,60,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Indirect sun; keep soil moist.
+Turmeric,Vegetable,Medium,131,3,6,20,34,60,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Filtered light; regular water.
+Turmeric F1,Vegetable,Medium,114,2,5,18,34,60,85,14,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Filtered light; regular water.
+Turmeric Early,Vegetable,Medium,132,2,5,20,35,65,90,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Filtered light; regular water.
+Turmeric Giant,Vegetable,Medium,121,3,6,18,36,65,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Filtered light; regular water.
+Turmeric Hybrid,Vegetable,Medium,113,4,6,20,35,60,90,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Filtered light; regular water.
+Turmeric Mini,Vegetable,Medium,141,4,7,20,34,65,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Filtered light; regular water.
+Spinach,Vegetable,Easy,36,3,6,15,28,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade ok; quick harvest.
+Spinach Nano,Vegetable,Easy,38,2,6,16,29,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade ok; quick harvest.
+Spinach Giant,Vegetable,Easy,35,3,7,15,29,50,80,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade ok; quick harvest.
+Spinach Late,Vegetable,Easy,28,2,5,16,29,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade ok; quick harvest.
+Amaranth (Red),Vegetable,Easy,38,4,7,20,32,55,85,4,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; frequent picking.
+Amaranth (Red) Heirloom,Vegetable,Easy,49,5,7,18,32,55,85,6,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; frequent picking.
+Amaranth (Red) Prolific,Vegetable,Easy,51,5,6,21,32,60,90,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; frequent picking.
+Amaranth (Red) Plus,Vegetable,Easy,49,5,8,18,32,55,85,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; frequent picking.
+Amaranth (Red) Hybrid,Vegetable,Easy,36,4,7,18,32,55,90,6,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; frequent picking.
+Mustard Greens,Vegetable,Easy,55,3,6,15,26,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Tender leaves; bolt in heat.
+Mustard Greens Prolific,Vegetable,Easy,45,3,5,13,26,50,80,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Tender leaves; bolt in heat.
+Mustard Greens Local,Vegetable,Easy,61,3,5,16,28,45,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Tender leaves; bolt in heat.
+Mustard Greens Plus,Vegetable,Easy,44,3,7,13,26,50,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Tender leaves; bolt in heat.
+Mustard Greens Select,Vegetable,Easy,42,4,5,15,28,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Tender leaves; bolt in heat.
+Mustard Greens Prime,Vegetable,Easy,36,2,7,16,28,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Tender leaves; bolt in heat.
+Kale,Vegetable,Medium,70,4,7,12,24,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; steady moisture.
+Kale Prolific,Vegetable,Medium,56,3,6,10,24,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; steady moisture.
+Kale Heirloom,Vegetable,Medium,51,3,6,10,26,50,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; steady moisture.
+Kale Patio,Vegetable,Medium,70,5,8,10,25,45,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; steady moisture.
+Kale Prime,Vegetable,Medium,74,3,7,10,26,50,80,8,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; steady moisture.
+Swiss Chard,Vegetable,Easy,62,4,7,15,28,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut-and-come-again harvest.
+Swiss Chard Early,Vegetable,Easy,64,3,8,16,29,45,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut-and-come-again harvest.
+Swiss Chard Prolific,Vegetable,Easy,68,5,8,13,28,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut-and-come-again harvest.
+Swiss Chard Heirloom,Vegetable,Easy,67,4,6,13,30,50,75,8,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut-and-come-again harvest.
+Lettuce,Vegetable,Easy,56,3,6,15,26,50,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Light sun; avoid heat.
+Lettuce Local,Vegetable,Easy,34,3,7,16,26,55,85,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Light sun; avoid heat.
+Lettuce Prolific,Vegetable,Easy,45,3,7,15,26,55,85,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Light sun; avoid heat.
+Lettuce Late,Vegetable,Easy,45,2,5,13,28,50,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Light sun; avoid heat.
+Lettuce Late,Vegetable,Easy,66,3,7,16,27,55,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Light sun; avoid heat.
+Lettuce Plus,Vegetable,Easy,56,3,7,13,26,50,85,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Light sun; avoid heat.
+Coriander,Herb,Easy,44,3,6,15,28,40,70,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; light watering.
+Coriander Compact,Herb,Easy,42,4,6,16,29,40,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; light watering.
+Coriander Late,Herb,Easy,31,3,6,13,30,40,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; light watering.
+Coriander Compact,Herb,Easy,53,3,7,15,29,40,70,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; light watering.
+Coriander Mini,Herb,Easy,34,4,6,13,29,40,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; light watering.
+Mint,Herb,Easy,55,2,5,18,30,55,85,4,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Moist soil; container recommended.
+Mint Local,Herb,Easy,50,3,6,19,32,55,90,3,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Moist soil; container recommended.
+Mint Compact,Herb,Easy,40,2,5,16,32,60,90,6,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Moist soil; container recommended.
+Mint Plus,Herb,Easy,42,3,4,19,30,60,90,3,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Moist soil; container recommended.
+Mint Giant,Herb,Easy,41,2,6,19,30,55,85,6,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Moist soil; container recommended.
+Mint Late,Herb,Easy,50,2,4,19,31,55,90,3,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Moist soil; container recommended.
+Basil,Herb,Easy,48,4,8,20,34,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; avoid waterlogging.
+Basil Prime,Herb,Easy,44,3,7,18,36,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; avoid waterlogging.
+Basil Patio,Herb,Easy,49,5,9,21,34,45,80,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; avoid waterlogging.
+Basil Heirloom,Herb,Easy,39,3,8,20,34,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; avoid waterlogging.
+Basil Plus,Herb,Easy,59,4,8,18,36,50,80,5,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; avoid waterlogging.
+Basil Nano,Herb,Easy,59,5,7,21,34,45,80,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; avoid waterlogging.
+Basil Gold,Herb,Easy,56,4,9,20,35,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; avoid waterlogging.
+Thai Basil,Herb,Medium,63,4,8,20,34,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warmth & sun; pinch flowers.
+Thai Basil F1,Herb,Medium,75,5,9,18,36,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warmth & sun; pinch flowers.
+Thai Basil Select,Herb,Medium,66,3,7,18,34,45,80,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warmth & sun; pinch flowers.
+Thai Basil Compact,Herb,Medium,81,4,8,20,36,50,75,5,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warmth & sun; pinch flowers.
+Thai Basil Gold,Herb,Medium,56,4,8,21,35,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warmth & sun; pinch flowers.
+Thai Basil Nano,Herb,Medium,47,4,8,18,34,50,80,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warmth & sun; pinch flowers.
+Thai Basil Giant,Herb,Medium,80,5,9,21,34,45,75,5,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Warmth & sun; pinch flowers.
+Holy Basil,Herb,Easy,54,4,8,20,34,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; light feeding.
+Holy Basil Nano,Herb,Easy,54,4,8,18,36,45,80,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; light feeding.
+Holy Basil Patio,Herb,Easy,55,5,8,18,34,50,80,5,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; light feeding.
+Holy Basil Plus,Herb,Easy,40,4,9,18,35,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; light feeding.
+Dill,Herb,Easy,44,4,7,15,26,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Dill Nano,Herb,Easy,31,5,8,13,27,45,75,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Dill Compact,Herb,Easy,57,4,6,15,28,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Dill Prolific,Herb,Easy,43,4,7,13,27,50,80,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Dill Gold,Herb,Easy,52,3,8,15,26,45,80,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Dill F1,Herb,Easy,55,5,8,13,27,50,80,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Dill Giant,Herb,Easy,55,3,7,16,28,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Parsley,Herb,Medium,56,3,6,12,24,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; steady moisture.
+Parsley Giant,Herb,Medium,67,2,6,13,25,50,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; steady moisture.
+Parsley Local,Herb,Medium,75,2,6,10,26,45,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; steady moisture.
+Parsley Heirloom,Herb,Medium,77,2,6,10,24,45,80,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; steady moisture.
+Chives,Herb,Easy,62,3,6,12,24,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut leaves regularly.
+Chives Nano,Herb,Easy,72,3,6,10,24,50,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut leaves regularly.
+Chives Prolific,Herb,Easy,72,2,7,10,24,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut leaves regularly.
+Chives Giant,Herb,Easy,61,4,7,10,26,50,80,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cut leaves regularly.
+Oregano,Herb,Easy,69,4,8,18,30,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Well-drained; light feed.
+Oregano Gold,Herb,Easy,72,4,8,18,30,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Well-drained; light feed.
+Oregano Plus,Herb,Easy,55,4,8,18,32,45,75,5,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Well-drained; light feed.
+Oregano Hybrid,Herb,Easy,61,4,9,18,32,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Well-drained; light feed.
+Oregano Select,Herb,Easy,47,4,7,19,30,45,80,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Well-drained; light feed.
+Rosemary,Herb,Medium,92,5,9,15,28,40,70,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Rosemary Prime,Herb,Medium,82,5,8,16,28,45,70,7,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Rosemary Prolific,Herb,Medium,93,4,9,13,28,40,70,7,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Rosemary Hybrid,Herb,Medium,88,5,8,16,30,40,70,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Rosemary Prime,Herb,Medium,105,6,8,15,29,40,75,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Rosemary Plus,Herb,Medium,104,5,9,15,30,40,75,7,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Rosemary Compact,Herb,Medium,89,5,10,16,30,45,75,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Thyme,Herb,Medium,62,5,9,15,28,40,70,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Avoid overwatering; full sun.
+Thyme Mini,Herb,Medium,85,5,8,15,28,45,70,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Avoid overwatering; full sun.
+Thyme Hybrid,Herb,Medium,71,6,10,16,28,45,70,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Avoid overwatering; full sun.
+Thyme Patio,Herb,Medium,78,4,9,16,29,40,70,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Avoid overwatering; full sun.
+Thyme Gold,Herb,Medium,95,5,8,13,28,45,75,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Avoid overwatering; full sun.
+Thyme Late,Herb,Medium,82,5,8,16,29,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Avoid overwatering; full sun.
+Marigold,Flower,Easy,65,5,9,18,34,40,75,6,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Deadhead spent blooms; potash feed.
+Marigold Heirloom,Flower,Easy,62,5,8,19,34,40,75,8,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Deadhead spent blooms; potash feed.
+Marigold Early,Flower,Easy,54,5,9,16,34,45,80,6,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Deadhead spent blooms; potash feed.
+Marigold Heirloom,Flower,Easy,65,5,10,18,36,45,80,8,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Deadhead spent blooms; potash feed.
+Dahlia,Flower,Medium,94,5,8,15,28,45,70,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; avoid waterlogging.
+Dahlia Nano,Flower,Medium,105,6,8,16,28,50,70,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; avoid waterlogging.
+Dahlia F1,Flower,Medium,91,4,8,13,28,50,75,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; avoid waterlogging.
+Dahlia Local,Flower,Medium,91,5,8,15,29,50,75,12,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; avoid waterlogging.
+Dahlia Select,Flower,Medium,85,6,8,13,28,45,75,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool weather; avoid waterlogging.
+Sunflower (Dwarf),Flower,Easy,80,6,10,20,34,45,75,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; support if windy.
+Sunflower (Dwarf) Prime,Flower,Easy,80,7,9,18,36,50,75,8,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; support if windy.
+Sunflower (Dwarf) Local,Flower,Easy,87,5,9,20,35,50,80,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; support if windy.
+Sunflower (Dwarf) Plus,Flower,Easy,73,6,10,18,35,50,75,8,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; support if windy.
+Sunflower (Dwarf) Hybrid,Flower,Easy,72,5,10,18,34,45,80,8,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; support if windy.
+Petunia,Flower,Easy,57,5,9,18,30,45,75,6,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Regular feeding; remove dead blooms.
+Petunia Plus,Flower,Easy,73,4,9,16,32,45,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Regular feeding; remove dead blooms.
+Petunia Prolific,Flower,Easy,75,4,10,18,32,45,75,6,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Regular feeding; remove dead blooms.
+Petunia Compact,Flower,Easy,70,4,9,18,32,45,80,4,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Regular feeding; remove dead blooms.
+Zinnia,Flower,Easy,51,6,10,20,34,45,75,6,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; full sun.
+Zinnia Hybrid,Flower,Easy,49,6,9,21,34,50,80,4,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; full sun.
+Zinnia Giant,Flower,Easy,48,5,9,20,34,50,75,4,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; full sun.
+Zinnia Heirloom,Flower,Easy,72,6,11,21,36,45,75,4,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; full sun.
+Chrysanthemum,Flower,Medium,76,4,8,15,26,45,75,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Pinch tips; avoid soggy soil.
+Chrysanthemum Mini,Flower,Medium,79,4,8,13,26,45,80,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Pinch tips; avoid soggy soil.
+Chrysanthemum Prolific,Flower,Medium,93,4,8,15,28,45,75,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Pinch tips; avoid soggy soil.
+Chrysanthemum Compact,Flower,Medium,92,4,9,15,26,50,75,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Pinch tips; avoid soggy soil.
+Chrysanthemum Plus,Flower,Medium,77,5,7,13,26,50,80,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Pinch tips; avoid soggy soil.
+Chrysanthemum Select,Flower,Medium,98,3,7,15,27,45,75,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Pinch tips; avoid soggy soil.
+Rose (Mini),Flower,Medium,87,5,9,15,32,45,75,10,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 5–6h; prune spent blooms.
+Rose (Mini) Late,Flower,Medium,101,6,10,16,33,50,75,12,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 5–6h; prune spent blooms.
+Rose (Mini) Mini,Flower,Medium,103,4,8,16,32,45,80,8,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 5–6h; prune spent blooms.
+Rose (Mini) Nano,Flower,Medium,95,5,9,13,33,45,75,12,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 5–6h; prune spent blooms.
+Rose (Mini) Patio,Flower,Medium,106,4,10,13,33,50,75,12,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 5–6h; prune spent blooms.
+Hibiscus (Dwarf),Flower,Medium,93,5,9,20,34,55,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Bright sun; steady water.
+Hibiscus (Dwarf) Giant,Flower,Medium,88,6,8,21,34,55,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Bright sun; steady water.
+Hibiscus (Dwarf) Mini,Flower,Medium,109,5,8,21,34,60,85,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Bright sun; steady water.
+Hibiscus (Dwarf) Late,Flower,Medium,101,5,10,18,35,55,90,8,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Bright sun; steady water.
+Hibiscus (Dwarf) Heirloom,Flower,Medium,82,6,8,20,34,60,90,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Bright sun; steady water.
+Hibiscus (Dwarf) Heirloom,Flower,Medium,90,5,9,20,34,60,90,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Bright sun; steady water.
+Hibiscus (Dwarf) Late,Flower,Medium,107,5,9,20,35,55,90,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Bright sun; steady water.
+Jasmine,Flower,Medium,85,5,9,20,34,55,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; fragrant blooms.
+Jasmine Compact,Flower,Medium,72,4,10,21,36,55,90,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; fragrant blooms.
+Jasmine Nano,Flower,Medium,102,5,8,20,34,55,85,8,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; fragrant blooms.
+Jasmine F1,Flower,Medium,70,5,9,21,36,60,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; fragrant blooms.
+Bougainvillea (Dwarf),Flower,Medium,106,6,10,20,34,45,75,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Dry side; full sun.
+Bougainvillea (Dwarf) Early,Flower,Medium,100,6,9,18,34,45,80,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Dry side; full sun.
+Bougainvillea (Dwarf) Nano,Flower,Medium,95,7,10,18,35,50,75,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Dry side; full sun.
+Bougainvillea (Dwarf) Prime,Flower,Medium,90,6,10,20,34,45,80,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Dry side; full sun.
+Bougainvillea (Dwarf) Plus,Flower,Medium,112,6,9,20,36,50,75,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Dry side; full sun.
+Bougainvillea (Dwarf) Select,Flower,Medium,117,6,11,20,35,50,75,14,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Dry side; full sun.
+Bougainvillea (Dwarf) Hybrid,Flower,Medium,96,5,11,21,36,50,75,12,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Dry side; full sun.
+Strawberry (Pot),Fruit,Easy,81,4,8,15,28,45,75,6,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Strawberry (Pot) Mini,Fruit,Easy,80,4,8,13,28,50,75,6,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Strawberry (Pot) Prolific,Fruit,Easy,94,3,8,16,30,50,75,6,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Strawberry (Pot) F1,Fruit,Easy,61,3,8,15,28,45,75,4,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Papaya (Dwarf),Fruit,Medium,121,6,10,22,35,55,85,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; good drainage.
+Papaya (Dwarf) F1,Fruit,Medium,138,6,11,23,36,55,85,18,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; good drainage.
+Papaya (Dwarf) Nano,Fruit,Medium,136,6,11,20,36,55,85,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; good drainage.
+Papaya (Dwarf) Prime,Fruit,Medium,136,5,9,23,35,55,85,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; good drainage.
+Papaya (Dwarf) Hybrid,Fruit,Medium,129,5,10,20,37,55,90,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; good drainage.
+Papaya (Dwarf) F1,Fruit,Medium,131,5,10,20,35,60,85,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; good drainage.
+Papaya (Dwarf) Late,Fruit,Medium,119,6,9,20,37,55,90,22,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Full sun; good drainage.
+Guava (Dwarf),Fruit,Medium,132,6,10,20,34,55,85,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Sun & airflow; prune yearly.
+Guava (Dwarf) Patio,Fruit,Medium,145,7,11,20,36,55,85,22,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Sun & airflow; prune yearly.
+Guava (Dwarf) Giant,Fruit,Medium,143,6,9,20,35,60,85,18,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Sun & airflow; prune yearly.
+Guava (Dwarf) F1,Fruit,Medium,127,6,9,20,34,60,90,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Sun & airflow; prune yearly.
+Guava (Dwarf) F1,Fruit,Medium,116,6,9,21,34,60,85,22,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Sun & airflow; prune yearly.
+Lemon (Pot),Fruit,Medium,102,6,10,18,32,45,75,15,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 6–8h; feed citrus fertilizer.
+Lemon (Pot) Early,Fruit,Medium,116,7,10,19,33,50,80,15,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 6–8h; feed citrus fertilizer.
+Lemon (Pot) Select,Fruit,Medium,106,6,11,18,34,45,75,15,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 6–8h; feed citrus fertilizer.
+Lemon (Pot) Select,Fruit,Medium,114,7,10,18,33,45,75,15,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sun 6–8h; feed citrus fertilizer.
+Lime (Pot),Fruit,Medium,116,6,10,18,32,45,75,15,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Consistent water; good drainage.
+Lime (Pot) Select,Fruit,Medium,115,6,11,18,34,50,80,15,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Consistent water; good drainage.
+Lime (Pot) Select,Fruit,Medium,104,6,9,16,32,50,80,17,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Consistent water; good drainage.
+Lime (Pot) Compact,Fruit,Medium,129,5,9,19,33,50,75,17,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Consistent water; good drainage.
+Lime (Pot) Hybrid,Fruit,Medium,130,7,11,19,34,50,80,13,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Consistent water; good drainage.
+Fig (Dwarf),Fruit,Medium,129,6,10,18,32,45,75,20,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Large pot; prune in winter.
+Fig (Dwarf) Prolific,Fruit,Medium,128,6,10,18,33,45,75,22,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Large pot; prune in winter.
+Fig (Dwarf) Early,Fruit,Medium,124,7,9,19,33,50,80,22,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Large pot; prune in winter.
+Fig (Dwarf) Patio,Fruit,Medium,132,5,9,18,33,50,80,18,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Large pot; prune in winter.
+Fig (Dwarf) F1,Fruit,Medium,117,6,9,16,33,50,75,18,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Large pot; prune in winter.
+Pomegranate (Dwarf),Fruit,Medium,121,6,10,20,34,45,75,18,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Hot sun boosts fruiting.
+Pomegranate (Dwarf) Patio,Fruit,Medium,128,7,11,20,34,45,80,16,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Hot sun boosts fruiting.
+Pomegranate (Dwarf) Patio,Fruit,Medium,132,7,10,18,34,45,80,16,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Hot sun boosts fruiting.
+Pomegranate (Dwarf) Compact,Fruit,Medium,149,6,11,20,36,50,80,18,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Hot sun boosts fruiting.
+Pomegranate (Dwarf) Select,Fruit,Medium,130,5,9,20,36,45,75,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Hot sun boosts fruiting.
+Pomegranate (Dwarf) Late,Fruit,Medium,123,6,10,21,36,45,80,16,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Hot sun boosts fruiting.
+Mulberry (Dwarf),Fruit,Medium,125,6,10,18,32,45,75,18,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Prune after harvest; bird net if needed.
+Mulberry (Dwarf) Prime,Fruit,Medium,103,5,10,16,32,50,75,20,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Prune after harvest; bird net if needed.
+Mulberry (Dwarf) Patio,Fruit,Medium,121,5,9,18,33,50,75,20,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Prune after harvest; bird net if needed.
+Mulberry (Dwarf) Early,Fruit,Medium,126,5,9,16,32,45,75,18,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Prune after harvest; bird net if needed.
+Mulberry (Dwarf) Mini,Fruit,Medium,124,6,9,18,34,50,80,18,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Prune after harvest; bird net if needed.
+Mulberry (Dwarf) Compact,Fruit,Medium,117,7,11,16,34,45,80,20,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Prune after harvest; bird net if needed.
+Mulberry (Dwarf) Select,Fruit,Medium,94,7,11,19,32,45,75,18,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Prune after harvest; bird net if needed.
+Banana (Dwarf),Fruit,Medium,160,6,10,22,35,60,85,25,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,High feeding; steady moisture.
+Banana (Dwarf) Mini,Fruit,Medium,160,6,11,22,35,65,85,27,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,High feeding; steady moisture.
+Banana (Dwarf) F1,Fruit,Medium,158,6,9,20,35,60,90,23,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,High feeding; steady moisture.
+Banana (Dwarf) Select,Fruit,Medium,174,7,11,20,35,60,85,23,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,High feeding; steady moisture.
+Banana (Dwarf) Prime,Fruit,Medium,171,6,10,22,36,65,90,27,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,High feeding; steady moisture.
+Banana (Dwarf) Prolific,Fruit,Medium,166,7,10,22,35,60,85,27,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,High feeding; steady moisture.
+Mango (Dwarf),Fruit,Hard,163,6,10,22,35,55,85,25,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Large tub; full sun; prune.
+Mango (Dwarf) Select,Fruit,Hard,160,5,11,22,37,55,85,27,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Large tub; full sun; prune.
+Mango (Dwarf) F1,Fruit,Hard,159,5,9,23,36,55,90,25,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Large tub; full sun; prune.
+Mango (Dwarf) Giant,Fruit,Hard,169,5,11,20,35,55,85,25,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Large tub; full sun; prune.
+Mango (Dwarf) Local,Fruit,Hard,170,7,11,22,37,60,90,27,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Large tub; full sun; prune.
+Mango (Dwarf) Early,Fruit,Hard,179,5,10,22,35,55,85,27,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Large tub; full sun; prune.
+Pea Var-333,Vegetable,Easy,62,4,8,15,26,50,80,8,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Trellis; avoid heat stress.
+Jasmine Var-334,Flower,Medium,77,5,9,20,34,55,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing support; fragrant blooms.
+Strawberry (Pot) Var-335,Fruit,Easy,75,4,8,15,28,45,75,6,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Onion (Green) Var-336,Vegetable,Easy,54,4,8,15,28,45,75,6,loam;potting;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Shallow roots; frequent light water.
+Snake Gourd Var-337,Vegetable,Medium,80,6,10,22,35,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Strawberry (Pot) Var-338,Fruit,Easy,81,4,8,15,28,45,75,6,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Zinnia Var-339,Flower,Easy,70,6,10,20,34,45,75,6,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Heat tolerant; full sun.
+Marigold Var-340,Flower,Easy,72,5,9,18,34,40,75,6,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Deadhead spent blooms; potash feed.
+Fig (Dwarf) Var-341,Fruit,Medium,127,6,10,18,32,45,75,20,loam;potting;sandy;clay,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Large pot; prune in winter.
+Turnip Var-342,Vegetable,Easy,51,3,6,15,26,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Fast-growing; keep moist.
+Banana (Dwarf) Var-343,Fruit,Medium,146,6,10,22,35,60,85,25,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,High feeding; steady moisture.
+Strawberry (Pot) Var-344,Fruit,Easy,73,4,8,15,28,45,75,6,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Dill Var-345,Herb,Easy,48,4,7,15,26,45,75,3,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Airy soil; gentle watering.
+Yardlong Bean Var-346,Vegetable,Easy,75,6,10,22,35,55,85,10,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Climbing supports; pick frequently.
+Guava (Dwarf) Var-347,Fruit,Medium,126,6,10,20,34,55,85,20,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Sun & airflow; prune yearly.
+Strawberry (Pot) Var-348,Fruit,Easy,70,4,8,15,28,45,75,6,loam;potting;sandy;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; keep crowns above soil.
+Broad Bean Var-349,Vegetable,Medium,91,5,8,15,28,45,75,10,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Cool season; wind protection.
+Parsley Var-350,Herb,Medium,71,3,6,12,24,45,75,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; steady moisture.
+Rosemary Var-351,Herb,Medium,90,5,9,15,28,40,70,5,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Dryer soil; full sun preferred.
+Mango (Dwarf) Var-352,Fruit,Hard,168,6,10,22,35,55,85,25,loam;potting;sandy;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Large tub; full sun; prune.
+Oregano Var-353,Herb,Easy,59,4,8,18,30,45,75,3,loam;potting;clay,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Well-drained; light feed.
+Coriander Var-354,Herb,Easy,50,3,6,15,28,40,70,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; light watering.
+Garlic Var-355,Vegetable,Medium,116,4,7,12,24,45,75,6,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Plant cloves; keep weed-free.
+Tomato Var-356,Vegetable,Easy,88,6,10,20,35,50,80,10,loam;potting;sandy,winter;summer,dhaka;chittagong;khulna;rajshahi;sylhet,Sunny spot; regular watering; stake vines.
+Coriander Var-357,Herb,Easy,31,3,6,15,28,40,70,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Partial shade; light watering.
+Lettuce Var-358,Vegetable,Easy,47,3,6,15,26,50,80,4,loam;potting;clay,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Light sun; avoid heat.
+Snake Gourd Var-359,Vegetable,Medium,81,6,10,22,35,60,85,20,loam;potting;sandy,summer;monsoon,dhaka;chittagong;khulna;rajshahi;sylhet,Train vines; plenty of sun & water.
+Petunia Var-360,Flower,Easy,67,5,9,18,30,45,75,6,loam;potting;sandy,winter,dhaka;chittagong;khulna;rajshahi;sylhet,Regular feeding; remove dead blooms.

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoofBot - AI Plant Recommendation System</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh; color: #333;
+    }
+    .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+    .header { text-align: center; color: white; margin-bottom: 30px; animation: fadeInDown 1s ease-out; }
+    .header h1 { font-size: 2.8em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    .header p { font-size: 1.3em; opacity: 0.9; }
+
+    .main-layout { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 25px; margin-bottom: 30px; }
+    .panel { background: rgba(255,255,255,0.95); border-radius: 20px; padding: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+    .input-panel { animation: fadeInLeft 1s ease-out; }
+    .results-panel { animation: fadeInUp 1s ease-out; }
+    .ml-panel { animation: fadeInRight 1s ease-out; }
+
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; font-size: 14px; }
+    .form-control { width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 14px; transition: all 0.3s ease; }
+    .form-control:focus { outline: none; border-color: #667eea; box-shadow: 0 0 10px rgba(102,126,234,0.3); transform: translateY(-2px); }
+    .range-display { font-size: 12px; color: #667eea; font-weight: bold; margin-top: 5px; }
+
+    .btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 15px 25px; border-radius: 25px; font-size: 15px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; width: 100%; margin-top: 10px; }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(102,126,234,0.4); }
+    .btn:active { transform: translateY(-1px); }
+    .btn[disabled] { opacity: 0.7; cursor: not-allowed; }
+    .btn-secondary { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); margin-top: 8px; }
+
+    .plant-card { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 15px; padding: 20px; margin-bottom: 15px; animation: slideInUp 0.5s ease-out; border-left: 5px solid #667eea; position: relative; overflow: hidden; }
+    .plant-card::before { content: ''; position: absolute; top: -50%; right: -50%; width: 100px; height: 100px; background: rgba(255,255,255,0.1); border-radius: 50%; animation: float 4s ease-in-out infinite; }
+    .plant-card h4 { color: #333; margin-bottom: 10px; font-size: 16px; }
+    .confidence-badge { background: rgba(102,126,234,0.9); color: white; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+    .plant-details { font-size: 13px; color: #555; line-height: 1.5; }
+    .plant-meta { display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; color: #666; }
+
+    .ml-status { background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); border-radius: 15px; padding: 20px; margin-bottom: 20px; text-align: center; }
+    .accuracy-circle { width: 90px; height: 90px; border-radius: 50%; background: conic-gradient(#667eea 0deg, #667eea 324deg, rgba(255,255,255,0.3) 324deg); display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; color: white; font-size: 16px; animation: rotate 3s ease-in-out infinite; }
+
+    .dataset-info { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); border-radius: 12px; padding: 18px; margin-bottom: 15px; font-size: 13px; }
+    .loading { display: none; text-align: center; padding: 40px; }
+    .spinner { border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #667eea; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+
+    .care-plan { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); border-radius: 15px; padding: 20px; margin-top: 20px; }
+    .care-plan h4 { text-align: center; margin-bottom: 15px; color: #333; }
+    .care-item { background: rgba(255,255,255,0.8); border-radius: 10px; padding: 12px; margin-bottom: 10px; border-left: 4px solid #667eea; font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
+    .care-day { font-weight: bold; color: #667eea; }
+    .care-time { font-size: 11px; color: #888; }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-bottom: 15px; }
+    .stat-item { text-align: center; padding: 15px; background: rgba(255,255,255,0.2); border-radius: 10px; }
+    .stat-number { font-size: 24px; font-weight: bold; color: #333; }
+    .stat-label { font-size: 11px; color: #666; }
+
+    .empty-state { text-align: center; padding: 40px 20px; color: #666; }
+    .empty-state h4 { margin-bottom: 15px; color: #667eea; }
+    .feature-list { font-size: 12px; line-height: 1.8; color: #555; }
+
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes rotate { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(180deg); } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideInUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-10px) rotate(180deg); } }
+
+    @media (max-width: 1024px) { .main-layout { grid-template-columns: 1fr 1fr; } .ml-panel { grid-column: 1 / -1; } }
+    @media (max-width: 768px) {
+      .main-layout { grid-template-columns: 1fr; }
+      .header h1 { font-size: 2.2em; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🌱 ছাদ কৃষি</h1>
+      <p>আপনার ছাদের শর্ত অনুযায়ী উপযুক্ত গাছ ও পরিচর্যার পরিকল্পনা</p>
+    </div>
+
+    <div class="main-layout">
+      <!-- Input Panel -->
+      <div class="panel input-panel">
+        <h3 style="margin-bottom: 20px; color: #667eea; text-align: center;">📝 ছাদের তথ্য দিন</h3>
+        <form id="roofForm">
+          <div class="form-group">
+            <label for="location">📍 এলাকা/জেলা:</label>
+            <select id="location" class="form-control" required>
+              <option value="">নির্বাচন করুন</option>
+              <option value="dhaka">ঢাকা</option>
+              <option value="chittagong">চট্টগ্রাম</option>
+              <option value="sylhet">সিলেট</option>
+              <option value="rajshahi">রাজশাহী</option>
+              <option value="khulna">খুলনা</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="sunlight">☀️ সূর্যের আলো (ঘন্টা/দিন):</label>
+            <input type="range" id="sunlight" min="2" max="12" value="6" class="form-control" oninput="updateSunlightValue(this.value)" />
+            <div class="range-display" id="sunlightValue">6 ঘন্টা</div>
+          </div>
+
+          <div class="form-group">
+            <label for="temperature">🌡️ গড় তাপমাত্রা (°সে):</label>
+            <input type="range" id="temperature" min="15" max="40" value="28" class="form-control" oninput="updateTempValue(this.value)" />
+            <div class="range-display" id="tempValue">28°C</div>
+          </div>
+
+          <div class="form-group">
+            <label for="humidity">💧 আর্দ্রতা (%):</label>
+            <input type="range" id="humidity" min="30" max="90" value="65" class="form-control" oninput="updateHumidityValue(this.value)" />
+            <div class="range-display" id="humidityValue">65%</div>
+          </div>
+
+          <div class="form-group">
+            <label for="area">📏 ছাদের এরিয়া (বর্গফুট):</label>
+            <input type="number" id="area" class="form-control" placeholder="যেমন: 100" min="10" max="1000" value="50" required />
+          </div>
+
+          <div class="form-group">
+            <label for="soil">🌱 মাটির ধরন:</label>
+            <select id="soil" class="form-control" required>
+              <option value="">নির্বাচন করুন</option>
+              <option value="clay">কাদামাটি (Clay)</option>
+              <option value="sandy">বালুমাটি (Sandy)</option>
+              <option value="loam">দোআঁশ (Loam)</option>
+              <option value="potting">পটিং মিক্স</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="season">🗓️ বর্তমান মৌসুম:</label>
+            <select id="season" class="form-control" required>
+              <option value="">নির্বাচন করুন</option>
+              <option value="winter">শীতকাল (নভেম্বর-ফেব্রুয়ারি)</option>
+              <option value="summer">গ্রীষ্মকাল (মার্চ-জুন)</option>
+              <option value="monsoon">বর্ষাকাল (জুলাই-অক্টোবর)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">🔍 AI সুপারিশ পান</button>
+          <button type="button" class="btn btn-secondary" onclick="loadSampleData(this)">📋 নমুনা ডেটা লোড করুন</button>
+        </form>
+      </div>
+
+      <!-- Results Panel -->
+      <div class="panel results-panel">
+        <h3 style="margin-bottom: 20px; color: #667eea; text-align: center;">🎯 ML Predictions</h3>
+        <div id="loading" class="loading">
+          <div class="spinner"></div>
+          <p><strong>RoofBot আপনার ছাদ অনুযায়ী গাছ বাছাই করছে...</strong></p>
+          <p style="font-size: 12px; color: #666;">Dataset থেকে সবচেয়ে উপযুক্ত গাছ খুঁজে বের করছে</p>
+        </div>
+        <div id="results">
+          <div class="empty-state">
+            <h4>🤖 RoofBot ML Features</h4>
+            <div class="feature-list">
+              <p>✅ <strong>Built‑in 24+ Plants</strong> – ক্লায়েন্ট‑সাইড dataset</p>
+              <p>🧠 <strong>Rule‑Based Scoring</strong> – সূর্য, তাপমাত্রা, আর্দ্রতা, মৌসুম</p>
+              <p>📊 <strong>Confidence Score</strong> – ম্যাচ শতাংশ</p>
+              <p>🗓️ <strong>Weekly Care Plan</strong> – স্বয়ংক্রিয়ভাবে তৈরি</p>
+              <p>⚡ <strong>Offline</strong> – কোনো সার্ভার ছাড়াই কাজ করে</p>
+            </div>
+            <br />
+            <p style="color: #667eea; font-weight: bold;">বাম পাশের ফর্ম পূরণ করে শুরু করুন! 🚀</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ML / Dataset Panel (static info) -->
+      <div class="panel ml-panel">
+        <h3 style="margin-bottom: 20px; color: #667eea; text-align: center;">🧠 ML Model Status</h3>
+        <div class="ml-status">
+          <div class="accuracy-circle">90%</div>
+          <p><strong>Pseudo‑Model Accuracy</strong></p>
+          <p style="font-size: 12px; color: #555;">Heuristic Classifier</p>
+        </div>
+
+        <div class="dataset-info">
+          <h4 style="margin-bottom: 10px;">🔧 ML Features:</h4>
+          <div class="feature-list">
+            <p>🌞 Sunlight Hours</p>
+            <p>🌡️ Temperature Range</p>
+            <p>💧 Humidity Level</p>
+            <p>📏 Area Requirements</p>
+            <p>🌱 Soil Type</p>
+            <p>🗓️ Season Suitability</p>
+            <p>📍 Location Climate</p>
+          </div>
+        </div>
+
+        <div class="dataset-info">
+          <h4 style="margin-bottom: 10px;">📈 Plant Categories:</h4>
+          <div id="categoryBreakdown">
+            <p>🥬 <strong>Vegetables:</strong> <span id="vegCount">15</span></p>
+            <p>🌸 <strong>Flowers:</strong> <span id="flowerCount">5</span></p>
+            <p>🌿 <strong>Herbs:</strong> <span id="herbCount">5</span></p>
+          </div>
+        </div>
+
+        <button id="refreshBtn" onclick="refreshDatasetInfo(event)" class="btn" style="font-size: 13px;">🔄 Refresh Dataset Info</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+(async function () {
+  try {
+    const res = await fetch('/api/plants');
+    if (!res.ok) throw new Error('Failed to load plants');
+    const plants = await res.json();
+
+    // আপনার আগের কোডের যেখানে dataset ব্যবহার করতেন, ঠিক সেখানেই plants ব্যবহার করুন
+    // উদাহরণ: টেবিল রেন্ডার
+    renderTable(plants); // <-- আপনার বিদ্যমান রেন্ডার ফাংশন
+
+    // উদাহরণ: সার্চ/ফিল্টার
+    // const result = plants.filter(p => p.category === 'Vegetable');
+    // renderTable(result);
+
+  } catch (e) {
+    console.error(e);
+    alert('Could not load plants from CSV');
+  }
+})();
+</script>
+
+   
+
+<!-- RoofBot API Enhancer: adds a floating launcher + slide-over to call /api/recommend -->
+<style>
+  /* Floating button */
+  #rb-launcher{position:fixed;right:20px;bottom:20px;background:#5b7cfa;color:#fff;
+    border:0;border-radius:999px;padding:12px 16px;font-weight:700;box-shadow:0 10px 24px rgba(0,0,0,.2);
+    cursor:pointer;z-index:2147483000}
+  /* Panel */
+  #rb-panel{position:fixed;top:0;right:-420px;width:400px;height:100vh;background:#ffffff;border-left:4px solid #5b7cfa;
+    box-shadow:-10px 0 30px rgba(0,0,0,.15);transition:right .35s ease;z-index:2147483001;display:flex;flex-direction:column}
+  #rb-panel.open{right:0}
+  #rb-head{padding:16px 18px;background:#eef1ff;display:flex;justify-content:space-between;align-items:center}
+  #rb-head h3{margin:0;color:#2f3e9e}
+  #rb-close{background:transparent;border:0;font-size:20px;cursor:pointer}
+  #rb-body{padding:16px 18px;overflow:auto}
+  #rb-body label{display:block;margin:10px 0 6px;font-weight:600}
+  #rb-body input,#rb-body select{width:100%;padding:10px;border:2px solid #e7e9ff;border-radius:10px}
+  #rb-body button{margin-top:12px;width:100%;padding:12px 14px;border:0;border-radius:12px;background:#5b7cfa;color:#fff;font-weight:800;cursor:pointer}
+  #rb-status{font-size:12px;color:#6979a7;margin-top:6px}
+  #rb-results .plant{border-left:5px solid #5b7cfa;background:#f6f7ff;margin:10px 0;padding:10px;border-radius:10px}
+  #rb-results .muted{color:#7e8bb6;font-size:12px}
+  #rb-results .care{background:#fff8db;border-left:5px solid #f5b300;margin:6px 0;padding:8px;border-radius:10px}
+</style>
+
+<button id="rb-launcher" title="RoofBot API">🌱 RoofBot API</button>
+<div id="rb-panel" role="dialog" aria-label="RoofBot API Panel" aria-modal="true">
+  <div id="rb-head">
+    <h3>RoofBot — API</h3>
+    <button id="rb-close" aria-label="Close">✕</button>
+  </div>
+  <div id="rb-body">
+    <div class="inputs">
+      <label>এলাকা/জেলা</label>
+      <select id="rb-location">
+        <option value="dhaka">ঢাকা</option>
+        <option value="chittagong">চট্টগ্রাম</option>
+        <option value="sylhet">সিলেট</option>
+        <option value="rajshahi">রাজশাহী</option>
+        <option value="khulna">খুলনা</option>
+      </select>
+
+      <label>সূর্যের আলো (ঘন্টা/দিন)</label>
+      <input type="number" id="rb-sunlight" value="6" min="2" max="12"/>
+
+      <label>গড় তাপমাত্রা (°সে)</label>
+      <input type="number" id="rb-temperature" value="28" min="15" max="40"/>
+
+      <label>আর্দ্রতা (%)</label>
+      <input type="number" id="rb-humidity" value="65" min="30" max="90"/>
+
+      <label>ছাদের এরিয়া (sqft)</label>
+      <input type="number" id="rb-area" value="100" min="10" max="1000"/>
+
+      <label>মাটির ধরন</label>
+      <select id="rb-soil">
+        <option value="clay">কাদামাটি (Clay)</option>
+        <option value="sandy">বালুমাটি (Sandy)</option>
+        <option value="loam" selected>দোআঁশ (Loam)</option>
+        <option value="potting">পটিং মিক্স</option>
+      </select>
+
+      <label>মৌসুম</label>
+      <select id="rb-season">
+        <option value="winter" selected>শীতকাল</option>
+        <option value="summer">গ্রীষ্মকাল</option>
+        <option value="monsoon">বর্ষাকাল</option>
+      </select>
+
+      <button id="rb-go">🔍 API সুপারিশ</button>
+      <div id="rb-status"></div>
+    </div>
+    <div id="rb-results" style="margin-top:14px">
+      <div class="muted">এখানে ফলাফল দেখা যাবে।</div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const qs = sel => document.querySelector(sel);
+  const panel = qs('#rb-panel');
+  const openBtn = qs('#rb-launcher');
+  const closeBtn = qs('#rb-close');
+  openBtn.addEventListener('click', ()=> panel.classList.add('open'));
+  closeBtn.addEventListener('click', ()=> panel.classList.remove('open'));
+
+  async function callApi(payload){
+    const res = await fetch('/api/recommend', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    if(!res.ok){
+      throw new Error((await res.text()) || ('HTTP ' + res.status));
+    }
+    return await res.json();
+  }
+
+  function render(results){
+    const root = document.getElementById('rb-results');
+    if(!results || !results.recommendations || results.recommendations.length === 0){
+      root.innerHTML = '<div class="muted">কোন উপযুক্ত গাছ পাওয়া যায়নি।</div>';
+      return;
+    }
+    let html = '<h4>🎯 সুপারিশ</h4>';
+    results.recommendations.forEach(p => {
+      const color = p.confidence >= 80 ? '#2f9e44' : (p.confidence >= 65 ? '#fab005' : '#e8590c');
+      html += '<div class="plant">'
+        + `<strong>${p.plant_name}</strong> — <span style="color:${color}">${p.confidence}% match</span>`
+        + `<div class="muted">${p.category} • ${p.difficulty_level} • ⏱️ ${p.growth_days} দিন</div>`
+        + `<div>যত্ন: ${p.care_instructions}</div>`
+        + '</div>';
+    });
+    html += '<h4>🗓️ কেয়ার প্ল্যান</h4>';
+    results.care_plan.forEach(c => {
+      html += `<div class="care"><strong>${c.day}</strong> — ${c.task} <span class="muted" style="float:right">${c.time}</span></div>`;
+    });
+    root.innerHTML = html;
+  }
+
+  qs('#rb-go').addEventListener('click', async() => {
+    const status = qs('#rb-status');
+    const payload = {
+      location: qs('#rb-location').value,
+      sunlight: parseInt(qs('#rb-sunlight').value),
+      temperature: parseInt(qs('#rb-temperature').value),
+      humidity: parseInt(qs('#rb-humidity').value),
+      area: parseInt(qs('#rb-area').value),
+      soil: qs('#rb-soil').value,
+      season: qs('#rb-season').value,
+      top_k: 6
+    };
+    status.textContent = 'Calling /api/recommend...';
+    try{
+      const data = await callApi(payload);
+      status.textContent = '✅ Done';
+      render(data);
+    }catch(err){
+      status.textContent = '❌ ' + err.message;
+    }
+  });
+
+  // Optional: basic feature detection + graceful fallback message
+  if(!('fetch' in window)){
+    document.getElementById('rb-status').textContent = 'Your browser does not support fetch API.';
+  }
+})();
+</script>
+<!-- / RoofBot API Enhancer -->
+</body>
+</html>

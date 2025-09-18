@@ -1,0 +1,9 @@
+division,avg_temp_c,annual_rain_mm,humidity_pct,sun_hours,soil_ph
+Dhaka,25.8,2000,75,6.5,6.5
+Chattogram,26.2,2900,78,6.0,6.3
+Rajshahi,26.5,1500,62,7.0,6.8
+Khulna,26.0,1800,72,6.7,6.6
+Barishal,26.3,2200,80,6.2,6.4
+Sylhet,24.8,4100,82,5.8,5.8
+Rangpur,24.2,2200,76,6.3,6.6
+Mymensingh,25.5,2300,79,6.1,6.4

@@ -1,0 +1,127 @@
+plant_name,category,difficulty_level,sunlight_min,sunlight_max,temp_min,temp_max,humidity_min,humidity_max,area_min,growth_days,locations,soils,seasons,care_instructions
+টমেটো,সবজি,easy,6,8,18,35,50,70,20,75,dhaka;chittagong;sylhet;rajshahi,loam;sandy,winter;summer,নিয়মিত পানি দিন এবং সাপোর্ট স্টিক দিন
+লাউ,সবজি,medium,5,7,20,32,60,80,50,90,dhaka;rajshahi;khulna,clay;loam,monsoon;winter,বড় পাত্র ব্যবহার করুন এবং মাচা তৈরি করুন
+শসা,সবজি,easy,4,6,15,30,55,75,15,65,dhaka;chittagong;sylhet,sandy;loam,winter;summer,প্রতিদিন পানি দিন এবং কীটনাশক স্প্রে করুন
+পুঁইশাক,শাকসবজি,easy,4,8,20,35,45,85,10,45,dhaka;chittagong;sylhet;rajshahi;khulna,clay;sandy;loam,winter;summer;monsoon,সহজ চাষ - শুধু নিয়মিত পানি দিন
+লালশাক,শাকসবজি,easy,5,7,18,32,50,70,8,35,dhaka;rajshahi;khulna,loam;sandy,winter;summer,৩ সপ্তাহ পর পর বীজ বপন করুন
+ধনিয়া,মসলা,easy,4,6,15,25,40,60,5,30,dhaka;chittagong;sylhet;rajshahi;khulna,sandy;loam;potting,winter,খুব সহজ - কম পানি দিন
+পুদিনা,মসলা,easy,3,6,10,30,50,80,8,40,dhaka;sylhet;rajshahi,loam;potting,winter;summer;monsoon,ছায়ায় রাখুন এবং বেশি পানি দিন
+তুলসী,ভেষজ,easy,6,8,20,35,45,70,12,50,dhaka;chittagong;sylhet;rajshahi;khulna,loam;sandy;potting,winter;summer,পবিত্র গাছ - নিয়মিত যত্ন নিন
+রোজমেরি,ভেষজ,medium,6,8,15,25,30,50,15,60,dhaka;chittagong;sylhet,sandy;potting,winter,কম পানি দিন - শুকনা মাটি পছন্দ করে
+বেসিল,মসলা,easy,5,7,18,30,50,70,10,45,dhaka;rajshahi;khulna,loam;potting,summer;monsoon,নিয়মিত পাতা ছিঁড়ে নিন
+গোলাপ,ফুল,medium,6,8,15,30,50,65,25,120,dhaka;chittagong;sylhet;rajshahi,loam;clay,winter;summer,প্রুনিং করুন এবং জৈব সার দিন
+গাঁদা,ফুল,easy,5,7,18,35,45,75,12,70,dhaka;chittagong;sylhet;rajshahi;khulna,sandy;loam;potting,winter;summer,রঙিন ফুল - সহজ চাষ
+জবা,ফুল,easy,6,8,20,35,55,80,20,90,dhaka;chittagong;rajshahi,loam;clay,winter;summer;monsoon,নিয়মিত ছাঁটাই করুন
+রজনীগন্ধা,ফুল,medium,4,6,18,28,60,75,18,100,dhaka;sylhet;chittagong,loam;sandy,winter,সুগন্ধি ফুল - সন্ধ্যায় ফুটে
+বেলি,ফুল,easy,5,7,20,32,50,70,15,85,dhaka;chittagong;sylhet;rajshahi,sandy;loam,winter;summer,সুগন্ধি - নিয়মিত পানি দিন
+সূর্যমুখী,ফুল,easy,7,9,20,35,45,65,30,80,dhaka;rajshahi;khulna,sandy;loam,winter;summer,লম্বা হয় - সাপোর্ট দরকার
+কসমস,ফুল,easy,6,8,18,30,40,60,15,60,dhaka;chittagong;sylhet,sandy;loam;potting,winter,রঙিন ফুল - খুব সহজ
+পর্তুলাকা,ফুল,easy,7,9,25,40,35,55,10,50,dhaka;rajshahi;khulna,sandy;potting,summer,গরমে ভালো - কম পানি
+ক্যাকটাস,সাকুলেন্ট,easy,8,10,20,45,20,40,8,365,dhaka;chittagong;rajshahi,sandy;potting,summer,খুবই কম পানি - রোদে রাখুন
+অ্যালোভেরা,ভেষজ,easy,6,8,15,35,30,60,12,150,dhaka;chittagong;sylhet;rajshahi;khulna,sandy;potting,winter;summer;monsoon,ঔষধি গুণ - কম পানি
+লেমনগ্রাস,মসলা,easy,6,8,20,35,55,75,20,60,dhaka;chittagong;sylhet,loam;sandy,monsoon;winter,চায়ের জন্য - নিয়মিত পানি
+আদা,মসলা,medium,4,6,20,30,70,85,15,180,dhaka;sylhet;chittagong,loam;clay,monsoon,ছায়ায় রাখুন - বেশি পানি
+হলুদ,মসলা,medium,5,7,22,32,65,80,18,200,dhaka;chittagong;rajshahi,loam;clay,monsoon,দীর্ঘ সময় লাগে - ধৈর্য রাখুন
+মরিচ,মসলা,easy,6,8,20,35,50,70,15,90,dhaka;chittagong;sylhet;rajshahi;khulna,sandy;loam,winter;summer,তীব্র মসলা - সাবধানে হ্যান্ডল করুন
+বেগুন,সবজি,medium,6,8,22,35,60,75,25,100,dhaka;rajshahi;khulna,loam;clay,winter;summer,বড় ফল - সাপোর্ট দিন
+আলু,সবজি,medium,5,7,15,25,55,70,30,120,sylhet;rajshahi;khulna,sandy;loam,winter,ঠান্ডা পছন্দ - শীতে লাগান
+পেঁয়াজ,সবজি,easy,5,7,15,30,50,65,10,110,dhaka;chittagong;rajshahi,sandy;loam,winter,ছোট জায়গায় হয় - নিয়মিত পানি
+রসুন,মসলা,easy,5,7,10,25,45,65,8,150,sylhet;rajshahi;khulna,sandy;loam,winter,ঠান্ডা পছন্দ - কম পানি
+গাজর,সবজি,medium,6,8,15,25,50,65,20,100,dhaka;sylhet;rajshahi,sandy;loam,winter,গভীর মাটি দরকার - ঠান্ডায় মিষ্টি
+মূলা,সবজি,easy,4,6,10,25,55,70,15,45,dhaka;chittagong;sylhet;rajshahi;khulna,sandy;loam;clay,winter,দ্রুত বাড়ে - ৩০ দিনেই পাওয়া যায়
+পালংশাক,শাকসবজি,easy,4,6,10,20,60,75,8,40,sylhet;rajshahi;khulna,loam;sandy,winter,ঠান্ডা পছন্দ - পুষ্টিকর
+বাঁধাকপি,সবজি,hard,5,7,12,22,65,75,35,120,sylhet;rajshahi,loam;clay,winter,ঠান্ডা লাগে - ধৈর্য এবং যত্ন দরকার
+ফুলকপি,সবজি,hard,5,7,10,20,70,80,40,110,sylhet;rajshahi;khulna,loam;clay,winter,খুব ঠান্ডা লাগে - কঠিন চাষ
+লেটুস,সালাদ,easy,4,6,8,18,65,75,12,50,dhaka;sylhet;chittagong,loam;potting,winter,সালাদ সবজি - ঠান্ডা পছন্দ
+স্পিনাচ,শাকসবজি,easy,4,6,12,22,60,70,10,45,sylhet;rajshahi;khulna,loam;sandy,winter,পালংশাকের মতো - ঠান্ডায় ভালো
+ব্রকলি,সবজি,hard,5,7,10,20,70,80,30,90,sylhet;rajshahi,loam;clay,winter,পুষ্টিকর কিন্তু কঠিন চাষ
+চাইনিজ বাঁধাকপি,সবজি,medium,4,6,15,25,65,75,20,70,dhaka;chittagong;sylhet,loam;sandy,winter,সহজ বাঁধাকপি - দ্রুত বাড়ে
+সরিষাশাক,শাকসবজি,easy,5,7,15,25,50,70,8,35,dhaka;rajshahi;khulna,sandy;loam,winter,তেল বীজও পাওয়া যায়
+কলমিশাক,শাকসবজি,easy,5,8,20,35,60,85,10,40,dhaka;chittagong;sylhet;rajshahi,loam;clay,summer;monsoon,পানিতে ভালো বাড়ে
+থানকুনি,ভেষজ,easy,3,5,18,30,70,85,8,50,dhaka;chittagong;sylhet,loam;clay;potting,monsoon;winter,ছায়ায় বাড়ে - ভেষজ গুণ
+নিম,ভেষজ,hard,6,8,20,40,45,75,100,1000,dhaka;chittagong;rajshahi,loam;clay,summer;monsoon,বড় গাছ - প্রাকৃতিক কীটনাশক
+পান,ভেষজ,medium,3,5,22,30,75,90,15,120,dhaka;chittagong;sylhet,loam;clay,monsoon,আর্দ্র ছায়া পছন্দ - মাচা দরকার
+কারি পাতা,মসলা,medium,5,7,20,35,55,75,20,180,dhaka;chittagong;rajshahi,loam;sandy,winter;summer,রান্নার কাজে - নিয়মিত ছাঁটাই
+জামরুল,ফল,hard,6,8,25,35,65,80,200,365,dhaka;chittagong;sylhet,loam;clay,summer;monsoon,বড় গাছ - অনেক জায়গা লাগে
+পেয়ারা,ফল,medium,6,8,20,35,55,75,150,200,dhaka;chittagong;rajshahi;khulna,loam;sandy,winter;summer,মাঝারি আকার - নিয়মিত ছাঁটাই
+আম,ফল,hard,7,9,25,40,60,80,500,1000,dhaka;chittagong;rajshahi,loam;clay,summer,খুব বড় গাছ - শুধু বড় ছাদে
+লেবু,ফল,easy,6,8,18,32,50,70,30,150,dhaka;chittagong;sylhet;rajshahi;khulna,sandy;loam,winter;summer,টবে হয় - নিয়মিত পানি
+কমলা,ফল,medium,6,8,15,30,55,70,50,200,dhaka;sylhet;chittagong,loam;sandy,winter,ভিটামিন সি - শীতে ফল
+আপেল কুল,ফল,easy,5,7,15,30,50,70,40,120,sylhet;rajshahi;khulna,loam;sandy,winter,দেশি ফল - মিষ্টি স্বাদ
+তেঁতুল,ফল,hard,6,8,22,38,50,70,300,800,dhaka;rajshahi;khulna,clay;loam,summer;monsoon,বিশাল গাছ - খুব বড় ছাদে
+কাঁঠাল,ফল,hard,6,8,25,35,65,80,400,1200,dhaka;chittagong;sylhet,loam;clay,summer;monsoon,জাতীয় ফল - অনেক বড়
+নারকেল,ফল,hard,7,9,25,35,60,75,300,2000,dhaka;chittagong;khulna,sandy;loam,summer;monsoon,সমুদ্র উপকূলে ভালো
+খেজুর,ফল,hard,7,9,20,40,40,65,200,1500,dhaka;rajshahi;khulna,sandy;loam,winter;summer,রস ও গুড় পাওয়া যায়
+পেঁপে,ফল,easy,6,8,22,35,60,75,25,150,dhaka;chittagong;sylhet;rajshahi;khulna,loam;sandy,summer;monsoon,দ্রুত বাড়ে - পুষ্টিকর
+কলা,ফল,medium,5,7,25,35,70,85,50,200,dhaka;chittagong;sylhet,loam;clay,summer;monsoon,মাঝারি জায়গা - আর্দ্র মাটি
+ডালিম,ফল,medium,6,8,18,32,45,65,40,180,dhaka;rajshahi;khulna,sandy;loam,winter;summer,স্বাস্থ্যকর ফল - কম পানি
+আতা,ফল,medium,6,8,20,32,55,70,60,200,dhaka;chittagong;rajshahi,loam;sandy,winter;summer,মিষ্টি ফল - নিয়মিত যত্ন
+শরিফা,ফল,medium,5,7,18,30,60,75,50,180,dhaka;chittagong;sylhet,loam;sandy,winter,আতার মতো - সুস্বাদু
+জামুন,ফল,hard,6,8,25,40,60,80,200,500,dhaka;chittagong;rajshahi,loam;clay,summer;monsoon,বড় গাছ - ডায়াবেটিস নিয়ন্ত্রণ
+বেল,ফল,hard,7,9,25,40,50,70,150,400,dhaka;rajshahi;khulna,sandy;loam,summer,শক্ত খোলা - পেট ভালো রাখে
+আমলকী,ভেষজ,medium,6,8,18,35,55,75,80,250,dhaka;sylhet;rajshahi,loam;sandy,winter,ভিটামিন সি - ভেষজ গুণ
+হরিতকী,ভেষজ,hard,6,8,20,35,50,70,100,300,sylhet;rajshahi;khulna,loam;clay,winter;summer,আয়ুর্বেদিক ওষুধ
+বহেড়া,ভেষজ,hard,5,7,18,32,55,70,120,350,dhaka;rajshahi;khulna,loam;clay,monsoon;winter,ত্রিফলার উপাদান
+অর্জুন,ভেষজ,hard,6,8,20,35,60,80,200,600,dhaka;chittagong;sylhet,loam;clay,monsoon,হৃদরোগের ওষুধ - বড় গাছ
+নাগলিঙ্গম,ভেষজ,hard,5,7,18,32,65,85,150,400,chittagong;sylhet;khulna,loam;clay,monsoon,ঔষধি গাছ - আর্দ্র পরিবেশ
+ইউক্যালিপটাস,ভেষজ,medium,7,9,15,35,45,65,100,300,dhaka;sylhet;rajshahi,sandy;loam,winter;summer,শ্বাসকষ্টের ওষুধ - দ্রুত বাড়ে
+তুঁত,ফল,medium,6,8,18,32,55,70,60,180,dhaka;chittagong;rajshahi,loam;sandy,winter;summer,রেশম কীট পালনেও ব্যবহার
+ডুমুর,ফল,easy,5,7,20,35,50,75,40,150,dhaka;chittagong;sylhet,sandy;loam,summer;monsoon,ছোট মিষ্টি ফল - সহজ চাষ
+জলপাই,ফল,medium,6,8,18,30,45,65,50,200,dhaka;rajshahi;khulna,loam;sandy,winter,আচার তৈরিতে ব্যবহার
+করমচা,ফল,easy,5,7,20,35,55,75,30,120,dhaka;chittagong;sylhet,sandy;loam,summer;monsoon,ছোট টক ফল - জ্যাম জেলি
+লটকন,ফল,medium,5,7,22,32,65,80,80,200,chittagong;sylhet;khulna,loam;clay,summer;monsoon,দেশি ফল - মিষ্টি টক
+সফেদা,ফল,medium,6,8,20,35,55,70,70,250,dhaka;chittagong;rajshahi,loam;sandy,summer,চিকু ফল - মিষ্টি স্বাদ
+রাম্বুতান,ফল,hard,6,8,25,35,75,90,100,300,chittagong;sylhet,loam;clay,summer;monsoon,বিদেশি ফল - আর্দ্র আবহাওয়া
+ড্রাগন ফল,ফল,medium,7,9,22,35,60,80,50,200,dhaka;chittagong;rajshahi,sandy;potting,summer,ক্যাকটাস পরিবার - কম পানি
+প্যাশন ফল,ফল,medium,6,8,18,30,65,80,40,180,dhaka;sylhet;chittagong,loam;sandy,monsoon;winter,লতানো ফল - মাচা দরকার
+স্ট্রবেরি,ফল,hard,4,6,8,18,70,85,15,90,sylhet;khulna,loam;potting,winter,ঠান্ডা পছন্দ - পাহাড়ি এলাকায় ভালো
+আঙুর,ফল,hard,7,9,15,28,55,70,80,300,dhaka;rajshahi;khulna,sandy;loam,winter,মাচা দরকার - শুষ্ক আবহাওয়া
+কিউই,ফল,hard,5,7,8,20,75,85,60,400,sylhet,loam;potting,winter,খুব ঠান্ডা লাগে - পাহাড়ি অঞ্চলে
+চেরি,ফল,hard,6,8,10,22,65,75,40,200,sylhet;khulna,loam;sandy,winter,ঠান্ডা ফল - বাংলাদেশে কঠিন
+আভোকাডো,ফল,medium,6,8,18,28,60,75,80,300,dhaka;chittagong;sylhet,loam;sandy,summer;monsoon,বিদেশি ফল - স্বাস্থ্যকর
+পেস্তা বাদাম,বাদাম,hard,7,9,15,30,45,60,100,500,rajshahi;khulna,sandy;loam,winter,শুষ্ক আবহাওয়া - দামি বাদাম
+কাজু বাদাম,বাদাম,hard,6,8,20,35,55,70,150,400,chittagong;sylhet;khulna,loam;sandy,summer,উষ্ণ আবহাওয়া - প্রক্রিয়াজাতকরণ দরকার
+চীনাবাদাম,বাদাম,easy,6,8,22,35,50,70,20,120,dhaka;rajshahi;khulna,sandy;loam,summer;monsoon,মাটির নিচে ফল - সহজ চাষ
+তিল,তেলবীজ,easy,6,8,20,35,45,65,15,90,dhaka;chittagong;rajshahi,sandy;loam,summer;winter,তেল উৎপাদন - খরা সহনশীল
+সরিষা,তেলবীজ,easy,5,7,12,25,50,70,12,80,dhaka;rajshahi;khulna,sandy;loam,winter,সরিষার তেল - ঠান্ডায় ভালো
+সূর্যমুখী,তেলবীজ,easy,7,9,18,32,45,65,25,100,dhaka;rajshahi;khulna,sandy;loam,winter;summer,বড় ফুল - তেল ও বীজ পাওয়া যায়
+তিসি,তেলবীজ,medium,5,7,15,25,55,70,10,110,sylhet;rajshahi;khulna,loam;sandy,winter,ওমেগা ৩ ফ্যাটি অ্যাসিড
+কালোজিরা,তেলবীজ,medium,5,7,15,30,50,65,8,120,dhaka;rajshahi;khulna,sandy;loam,winter,ভেষজ গুণসম্পন্ন - ডায়াবেটিস নিয়ন্ত্রণ
+চিয়া সিড,বীজ,medium,6,8,18,25,60,75,10,80,dhaka;sylhet;chittagong,loam;potting,winter,সুপার ফুড - পুষ্টিগুণ বেশি
+কুইনোয়া,শস্য,hard,5,7,10,20,55,70,20,120,sylhet;khulna,loam;sandy,winter,প্রোটিন সমৃদ্ধ - ঠান্ডা পছন্দ
+বার্লি,শস্য,medium,5,7,8,22,55,70,30,120,sylhet;rajshahi;khulna,loam;sandy,winter,শীতকালীন শস্য - পুষ্টিকর
+ওটস,শস্য,medium,4,6,5,18,60,75,25,100,sylhet;khulna,loam;sandy,winter,ব্রেকফাস্ট সিরিয়াল - ঠান্ডা লাগে
+গম,শস্য,medium,5,7,10,25,50,70,40,120,rajshahi;khulna,loam;sandy,winter,প্রধান খাদ্য শস্য - শীতে চাষ
+ধান,শস্য,hard,6,8,20,35,70,90,200,150,dhaka;chittagong;sylhet,clay,monsoon,প্রধান খাদ্য - অনেক পানি লাগে
+ভুট্টা,শস্য,easy,7,9,18,32,55,75,50,100,dhaka;rajshahi;khulna,sandy;loam,summer;monsoon,দ্রুত বৃদ্ধি - উচ্চতা বেশি
+মাশ কলাই,ডাল,easy,6,8,25,35,50,70,30,60,dhaka;rajshahi;khulna,loam;sandy,summer,ছোট ডাল - গরমে ভালো
+মসুর,ডাল,medium,5,7,15,25,55,70,25,90,rajshahi;khulna,loam;sandy,winter,শীতকালীন ডাল - প্রোটিন
+ছোলা,ডাল,medium,6,8,12,25,50,65,30,100,dhaka;rajshahi;khulna,loam;sandy,winter,কাবুলি চানা - ঠান্ডায় ভালো
+মটর,ডাল,easy,5,7,10,22,60,75,20,80,dhaka;sylhet;rajshahi,loam;sandy,winter,সবুজ মটর - শীতের সবজি
+সীম,ডাল,easy,6,8,18,30,55,75,40,90,dhaka;chittagong;sylhet,loam;sandy,winter;summer,লম্বা শীম - মাচা দরকার
+শিমের বিচি,ডাল,medium,5,7,15,25,60,75,35,110,dhaka;rajshahi;khulna,loam;sandy,winter,শুকনো বিচি - সংরক্ষণ করা যায়
+রাজমা,ডাল,medium,6,8,12,25,60,75,30,100,sylhet;rajshahi;khulna,loam;sandy,winter,কিডনি বিন - ঠান্ডা পছন্দ
+বরবটি,সবজি,easy,6,8,20,35,55,75,25,70,dhaka;chittagong;rajshahi;khulna,sandy;loam,summer;monsoon,লম্বা সবজি - সহজ চাষ
+ঢেঁড়স,সবজি,easy,6,8,22,35,50,70,20,65,dhaka;chittagong;rajshahi;khulna,sandy;loam,summer,ভিন্ডি - গরমে ভালো
+চিচিংগা,সবজি,easy,5,7,20,32,60,80,30,80,dhaka;chittagong;sylhet,loam;sandy,summer;monsoon,সাপের মতো লম্বা - মাচা দরকার
+ঝিংগা,সবজি,easy,5,7,20,32,60,80,25,75,dhaka;chittagong;sylhet;khulna,loam;sandy,summer;monsoon,রিজ গার্ড - পানি বেশি
+করলা,সবজি,medium,6,8,22,35,55,75,30,80,dhaka;chittagong;rajshahi;khulna,sandy;loam,summer;monsoon,তিতা সবজি - ডায়াবেটিস নিয়ন্ত্রণ
+পটল,সবজি,medium,5,7,20,32,65,80,40,90,dhaka;chittagong;sylhet,loam;clay,monsoon,আর্দ্র মাটি পছন্দ - মাচা দরকার
+কাকরোল,সবজি,medium,5,7,18,30,60,80,35,100,dhaka;chittagong;sylhet,loam;sandy,monsoon,স্পাইনি গার্ড - কাঁটাযুক্ত
+ধুন্দুল,সবজি,easy,6,8,20,32,55,75,50,85,dhaka;rajshahi;khulna,sandy;loam,summer;monsoon,অ্যাশ গার্ড - বড় ফল
+মিষ্টিকুমড়া,সবজি,easy,6,8,18,32,55,75,60,100,dhaka;chittagong;rajshahi;khulna,sandy;loam,winter;summer,মিষ্টি স্বাদ - পুষ্টিকর
+চালকুমড়া,সবজি,easy,5,7,20,35,60,80,80,110,dhaka;chittagong;sylhet,loam;sandy,monsoon,বড় কুমড়া - অনেক জায়গা
+ওলকপি,সবজি,medium,4,6,15,25,65,80,25,90,dhaka;sylhet;chittagong,loam;clay,winter,নল খোল - আর্দ্র মাটি
+কচুশাক,শাকসবজি,easy,4,6,20,35,70,90,15,50,dhaka;chittagong;sylhet,loam;clay,monsoon,পানিতে ভালো বাড়ে - পুষ্টিকর
+হেলেঞ্চা,শাকসবজি,easy,4,6,18,32,65,85,12,45,dhaka;chittagong;sylhet,loam;clay,monsoon,জলজ উদ্ভিদ - আর্দ্র পরিবেশ
+শুশনি,ভেষজ,easy,3,5,18,32,70,90,8,60,dhaka;chittagong;sylhet,loam;clay;potting,monsoon,ছায়ায় বাড়ে - ব্রাহ্মী শাক
+ব্রাহ্মী,ভেষজ,easy,3,5,15,30,75,90,10,80,dhaka;sylhet;chittagong,loam;potting,monsoon,স্মৃতিশক্তি বাড়ায় - জলজ উদ্ভিদ
+মানকচু,সবজি,medium,4,6,22,35,70,85,40,120,dhaka;chittagong;sylhet,loam;clay,monsoon,বড় পাতা - আর্দ্র মাটি
+কচু,সবজি,easy,4,6,20,35,65,85,30,100,dhaka;chittagong;sylhet;khulna,clay;loam,monsoon,মূল ও পাতা দুটোই খাওয়া যায়
+মুখি,সবজি,medium,5,7,22,32,60,80,35,110,dhaka;chittagong;rajshahi,loam;sandy,summer;monsoon,কন্দ জাতীয় সবজি
+শালগম,সবজি,easy,4,6,8,18,60,75,15,60,sylhet;rajshahi;khulna,loam;sandy,winter,ঠান্ডার সবজি - মূল ও পাতা
+বিট,সবজি,medium,5,7,10,20,65,75,20,80,sylhet;rajshahi;khulna,loam;sandy,winter,লাল রঙের মূল - রক্তের জন্য ভালো
+মিষ্টি আলু,সবজি,easy,6,8,20,32,55,75,40,120,dhaka;chittagong;rajshahi;khulna,sandy;loam,summer;winter,লতানো - মিষ্টি স্বাদ
+কাসাভা,সবজি,medium,6,8,22,35,60,80,60,180,chittagong;sylhet;khulna,sandy;loam,summer;monsoon,ট্যাপিওকা - প্রধান খাদ্য
+তেলাকুচা,সবজি,easy,4,6,18,30,65,80,20,70,dhaka;chittagong;sylhet,loam;sandy,monsoon,বর্ষার সবজি - সহজ চাষ
+লাফা,সবজি,easy,5,7,20,32,60,80,30,75,dhaka;chittagong;sylhet,loam;sandy,summer;monsoon,লুফা স্পঞ্জ - গোসলের জন্য ব্যবহার

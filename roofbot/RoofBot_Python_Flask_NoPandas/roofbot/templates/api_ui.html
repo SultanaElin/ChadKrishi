@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoofBot API UI</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f6f8ff; margin: 0; }
+    .wrap { max-width: 1000px; margin: 30px auto; padding: 20px; }
+    h1 { color: #3b5bdb; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .card { background: white; border-radius: 16px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,.06); }
+    label { display:block; margin: 8px 0 4px; font-weight: 600; font-size: 14px; color:#333; }
+    input, select { width: 100%; padding: 10px 12px; border: 2px solid #e6e8ff; border-radius: 10px; font-size: 14px; }
+    button { margin-top: 12px; padding: 12px 16px; border:0; border-radius: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:white; font-weight:700; cursor:pointer; }
+    .plant { border-left: 5px solid #667eea; padding: 12px; margin: 10px 0; border-radius: 10px; background: #f3f5ff; }
+    .care { background: #fff9db; border-left: 5px solid #fab005; padding: 10px; margin: 6px 0; border-radius: 10px; }
+    .muted { color: #7c8db5; font-size: 12px; }
+    @media (max-width: 900px){ .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🌱 RoofBot — API Demo</h1>
+    <p class="muted">এই পেজটি Flask API (<code>/api/recommend</code>) কল করে। আপনার মূল UI <a href="/">এখানে</a> অপরিবর্তিত আছে।</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>📝 ইনপুট</h3>
+        <label>এলাকা/জেলা</label>
+        <select id="location">
+          <option value="dhaka">ঢাকা</option>
+          <option value="chittagong">চট্টগ্রাম</option>
+          <option value="sylhet">সিলেট</option>
+          <option value="rajshahi">রাজশাহী</option>
+          <option value="khulna">খুলনা</option>
+        </select>
+
+        <label>সূর্যের আলো (ঘন্টা/দিন)</label>
+        <input type="number" id="sunlight" value="6" min="2" max="12" />
+
+        <label>গড় তাপমাত্রা (°সে)</label>
+        <input type="number" id="temperature" value="28" min="15" max="40" />
+
+        <label>আর্দ্রতা (%)</label>
+        <input type="number" id="humidity" value="65" min="30" max="90" />
+
+        <label>ছাদের এরিয়া (sqft)</label>
+        <input type="number" id="area" value="100" min="10" max="1000" />
+
+        <label>মাটির ধরন</label>
+        <select id="soil">
+          <option value="clay">কাদামাটি (Clay)</option>
+          <option value="sandy">বালুমাটি (Sandy)</option>
+          <option value="loam" selected>দোআঁশ (Loam)</option>
+          <option value="potting">পটিং মিক্স</option>
+        </select>
+
+        <label>মৌসুম</label>
+        <select id="season">
+          <option value="winter" selected>শীতকাল</option>
+          <option value="summer">গ্রীষ্মকাল</option>
+          <option value="monsoon">বর্ষাকাল</option>
+        </select>
+
+        <button id="go">🔍 API সুপারিশ</button>
+        <p class="muted" id="status"></p>
+      </div>
+
+      <div class="card" id="results">
+        <h3>🎯 ফলাফল</h3>
+        <p class="muted">এখানে রিকমেন্ডেশন ও কেয়ার প্ল্যান দেখাবে।</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function callApi(payload){
+      const res = await fetch('/api/recommend', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if(!res.ok){
+        const txt = await res.text();
+        throw new Error(txt || ('HTTP ' + res.status));
+      }
+      return await res.json();
+    }
+
+    function render(results){
+      const root = document.getElementById('results');
+      if(!results || !results.recommendations || results.recommendations.length === 0){
+        root.innerHTML = '<h3>🎯 ফলাফল</h3><p class="muted">কোন উপযুক্ত গাছ পাওয়া যায়নি।</p>';
+        return;
+      }
+      let html = '<h3>🎯 সুপারিশ</h3>';
+      results.recommendations.forEach(p => {
+        const color = p.confidence >= 80 ? '#2f9e44' : (p.confidence >= 65 ? '#fab005' : '#e8590c');
+        html += '<div class="plant">'
+          + `<strong>${p.plant_name}</strong> — <span style="color:${color}">${p.confidence}% match</span>`
+          + `<div class="muted">${p.category} • ${p.difficulty_level} • ⏱️ ${p.growth_days} দিন</div>`
+          + `<div>যত্ন: ${p.care_instructions}</div>`
+          + '</div>';
+      });
+      html += '<h3>🗓️ কেয়ার প্ল্যান</h3>';
+      results.care_plan.forEach(c => {
+        html += `<div class="care"><strong>${c.day}</strong> — ${c.task} <span class="muted" style="float:right">${c.time}</span></div>`;
+      });
+      root.innerHTML = html;
+    }
+
+    document.getElementById('go').addEventListener('click', async () => {
+      const payload = {
+        location: document.getElementById('location').value,
+        sunlight: parseInt(document.getElementById('sunlight').value),
+        temperature: parseInt(document.getElementById('temperature').value),
+        humidity: parseInt(document.getElementById('humidity').value),
+        area: parseInt(document.getElementById('area').value),
+        soil: document.getElementById('soil').value,
+        season: document.getElementById('season').value,
+        top_k: 6
+      };
+      const status = document.getElementById('status');
+      status.textContent = 'Calling /api/recommend...';
+      try{
+        const data = await callApi(payload);
+        status.textContent = '✅ Done';
+        render(data);
+      }catch(err){
+        status.textContent = '❌ ' + err.message;
+      }
+    });
+  </script>
+</body>
+</html>
